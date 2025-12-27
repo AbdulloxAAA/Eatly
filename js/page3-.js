@@ -112,9 +112,10 @@ function createPopularCard(item) {
 popularItems.forEach(item => {
   popularList.append(createPopularCard(item));
 });
-/////////////////////////////////////////////////////////////////////
+
 ////////////////////////////////////////////////////////////////////
 ////////////////Chiken SECTION//////////////////////////////////////
+// Menu ma'lumotlari
 const menuItems = [
   {
     img: "../images/product-2/salt1.png",
@@ -142,13 +143,17 @@ const menuItems = [
 
 const menuGrid = document.getElementById("menuGrid");
 
+// Menu kartasini yaratish funksiyasi
 function renderMenuCard(data) {
   const card = document.createElement("div");
   card.className = "menu-item";
 
+  // Har bir kartadagi boshlang'ich narx
+  let currentPrice = data.cost;
+
   card.innerHTML = `
     <span class="fav-btn">
-      <img src="${data.heart}">
+      <img src="${data.heart}" alt="heart">
     </span>
 
     <img class="item-pic" src="${data.img}" alt="${data.title}">
@@ -159,29 +164,41 @@ function renderMenuCard(data) {
     <div class="item-info">
       <span>${data.time}</span>
       <span class="item-score">
-        <img src="../images/product-1/Star (1).png">
+        <img src="../images/product-1/Star (1).png" alt="star">
         ${data.score}
       </span>
     </div>
 
     <div class="item-footer">
-      <span class="item-price">$${data.cost}</span>
+      <span class="item-price">$${currentPrice.toFixed(2)}</span>
       <button class="item-add">+</button>
     </div>
   `;
 
+  // ❤️ Heart toggle
   const heartImg = card.querySelector(".fav-btn img");
-
   heartImg.onclick = () => {
     heartImg.src = heartImg.src.includes("Heart")
       ? data.heartActive
       : data.heart;
   };
 
+  // ➕ Add price shu kartada
+  const addBtn = card.querySelector(".item-add");
+  const priceEl = card.querySelector(".item-price");
+
+  addBtn.onclick = () => {
+    currentPrice += data.cost;  // har bosishda original narx qo'shiladi
+    priceEl.textContent = `$${currentPrice.toFixed(2)}`;
+  };
+
   return card;
 }
 
-menuItems.forEach(el => menuGrid.append(renderMenuCard(el)));
+// Menu itemlarini yaratish va ekranga qo‘yish
+menuItems.forEach(item => {
+  menuGrid.append(renderMenuCard(item));
+});
 ////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 /////////////////////ACCORDION SECTION/////////////////////////////

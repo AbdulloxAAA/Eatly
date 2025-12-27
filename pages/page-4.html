@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Eatly - Figma</title>
-    <link rel="icon" href="./images/header/Logo eatly.png" />
+    <link rel="icon" href="../images/header/Logo eatly.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,22 +29,24 @@
           <div class="logo">
             <a href="/"> <img src="../images/header/Logo.png" alt="" /></a>
           </div>
-           <nav class="nav">
+          <nav class="nav">
             <ul class="nav-list">
-                           <div class="dropdown">
-  <a href="#" class="dropdown-btn">Menu ▾</a>
-  <ul class="dropdown-menu">
-    <li><a href="../pages/page-2.html">Menu 1</a></li>
-    <li><a href="../pages/page-3.html">Menu 2</a></li>
-    <li><a href="../pages/page-4.html">Menu 3</a></li>
-  </ul>
-</div>
+              <div class="dropdown">
+                <a href="#" class="dropdown-btn">Menu ▾</a>
+                <ul class="dropdown-menu">
+                  <li><a href="../pages/page-2.html">Menu 1</a></li>
+                  <li><a href="../pages/page-3.html">Menu 2</a></li>
+                  <li><a href="../pages/page-4.html">Menu 3</a></li>
+                </ul>
+              </div>
               <li><a href="../pages/pagr-5.html">Pricing</a></li>
               <li><a href="../pages/page-6.html">Blog 1</a></li>
               <li><a href="../pages/page-7.html">Blog 2</a></li>
               <li><a href="../pages/contact.html">Contact</a></li>
-
+              
             </ul>
+
+  
           </nav>
         </div>
 
@@ -59,121 +61,127 @@
       <!-- MOBILE MENU -->
       <div class="mobile-menu d-none">
         <ul>
-          <li><a href="./pages/page-2.html">Menu 1</a></li>
-          <li><a href="./pages/page-3.html">Menu 2</a></li>
-          <li><a href="./pages/page-4.html">Menu 3</a></li>
-          <li><a href="./pages/pagr-5.html">Blog 1</a></li>
-          <li><a href="./pages/page-6.html">Blog 2</a></li>
-          <li><a href="./pages/page-7.html">Pricing</a></li>
-          <li><a href="./pages/contact.html">Contact</a></li>
+          <li><a href="../pages/page-2.html">Menu 1</a></li>
+          <li><a href="../pages/page-3.html">Menu 2</a></li>
+          <li><a href="../pages/page-4.html">Menu 3</a></li>
+          <li><a href="../pages/pagr-5.html">Blog 1</a></li>
+          <li><a href="../pages/page-6.html">Blog 2</a></li>
+          <li><a href="../pages/page-7.html">Pricing</a></li>
+          <li><a href="../pages/contact.html">Contact</a></li>
         </ul>
         <div class="menu-btn">
           <a href="#" class="login">Login</a>
-          <a href="./pages/sign-up.html" class="btn">Sign Up</a>
+          <a href="../pages/sign-up.html" class="btn">Sign Up</a>
         </div>
       </div>
     </header>
     <div class="container hr"></div>
-  <main>
-  <section>
+    <main>
+      <section>
+        <div class="screen container">
+          <!-- MAP IMAGE (o‘zing rasm qo‘yasan) -->
+          <iframe
+          class="map-img"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.6506105009953!2d31.484672574655267!3d30.58740709264326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7f13bd124e82d%3A0xd922833ac30583bb!2sChicken%20hills!5e0!3m2!1sru!2s!4v1766827010499!5m2!1sru!2s"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <img src="../images/page4/Location.png" alt="" class="map-location" />
+          <!-- DELIVERY CARD -->
+          <div class="carde">
+            <div class="card-top">
+              <img src="../images/page4/Image.png" alt="" />
+              <div class="text">
+                <h4>David Smith</h4>
+                <span>Food Rider</span>
+              </div>
+            </div>
 
-<div class="screen container">
-  <!-- MAP IMAGE (o‘zing rasm qo‘yasan) -->
-  <img src="../images/page4/Map.png" class="map-img" alt="map">
-<img src="../images/page4/Location.png" alt="" class="map-location">
-  <!-- DELIVERY CARD -->
-  <div class="carde">
-    <div class="card-top">
-      <img src="../images/page4/Image.png" alt="">
-      <div class="text">
-        <h4>David Smith</h4>
-        <span>Food Rider</span>
-      </div>
-    </div>
+            <div class="card-content">
+              <div class="mini-card">
+                <span><img src="../images/page4/Locatin.png" alt="" /></span>
+                <p>
+                  Your Address<br /><b
+                    >Horizenal Road Stree 1178 California, USA</b
+                  >
+                </p>
+              </div>
 
-    <div class="card-content">
-      <div class="mini-card">
-        <span><img src="../images/page4/Locatin.png" alt=""></span>
-        <p>Your Address<br><b>Horizenal Road Stree 1178 California, USA</b></p>
-      </div>
+              <div class="mini-card">
+                <span><img src="../images/page4/Time.png" alt="" /></span>
+                <div class="nini-card">
+                  <p>Delivery Time<br /><b>15 Minutes</b></p>
+                  <button class="btne">Pending</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="checkout">
+          <!-- Cart Items -->
+          <div class="cart-item" data-price="12.99">
+            <div class="cart-df">
+              <img src="../images/product-2/salt1.png" alt="" />
+              <div class="info">
+                <h4>Chicken Hell</h4>
+                <span>$12.99</span>
+              </div>
+            </div>
 
-      <div class="mini-card">
-        <span><img src="../images/page4/Time.png" alt=""></span>
-       <div class="nini-card">
-         <p>Delivery Time<br><b>15 Minutes</b></p>
-        <button class="btne ">Pending</button>
-       </div>
-      </div>
+            <div class="counter">
+              <div class="nima">
+                <button class="minus">−</button>
+                <span class="qty">3</span>
+                <button class="plus">+</button>
+              </div>
+              <div class="item-total">$38.97</div>
+            </div>
+          </div>
 
-      
-    </div>
-  </div>
-</div>
-  </section>
-  <section>
-    <div class="checkout">
+          <div class="cart-item" data-price="19.99">
+            <div class="cart-df">
+              <img src="../images/product-2/salt3.png" alt="" />
+              <div class="info">
+                <h4>Chicken Hell</h4>
+                <span>$19.99</span>
+              </div>
+            </div>
 
-  <!-- Cart Items -->
-  <div class="cart-item" data-price="12.99">
-  <div class="cart-df">
-      <img src="../images/product-2/salt1.png" alt="">
-    <div class="info">
-      <h4>Chicken Hell</h4>
-      <span>$12.99</span>
-    </div>
-  </div>
+            <div class="counter">
+              <div class="nima">
+                <button class="minus">−</button>
+                <span class="qty">1</span>
+                <button class="plus">+</button>
+              </div>
+              <div class="item-total">$19.99</div>
+            </div>
+          </div>
 
-    <div class="counter">
-     <div class="nima">
-         <button class="minus">−</button>
-      <span class="qty">3</span>
-      <button class="plus">+</button>
-     </div>
-      <div class="item-total">$38.97</div>  
-    </div>
+          <!-- Coupon -->
+          <div class="coupon">
+            <input type="text" placeholder="Apply Coupon" />
+            <button>Apply</button>
+          </div>
 
-   
-  </div>
+          <!-- Summary -->
+          <div class="summary">
+            <div><span>Subtotal</span><span id="subtotal">$0.00</span></div>
+            <div><span>Delivery</span><span>$3.59</span></div>
+            <div class="total">
+              <span>Total</span><span id="total">$0.00</span>
+            </div>
+          </div>
 
-  <div class="cart-item" data-price="19.99">
-  <div class="cart-df">
-      <img src="../images/product-2/salt3.png" alt="">
-    <div class="info">
-      <h4>Chicken Hell</h4>
-      <span>$19.99</span>
-    </div>
-  </div>
-
-    <div class="counter">
-     <div class="nima">
-         <button class="minus">−</button>
-      <span class="qty">1</span>
-      <button class="plus">+</button>
-     </div>
-      <div class="item-total">$19.99</div>
-    </div>
-
-    
-  </div>
-
-  <!-- Coupon -->
-  <div class="coupon">
-    <input type="text" placeholder="Apply Coupon">
-    <button>Apply</button>
-  </div>
-
-  <!-- Summary -->
-  <div class="summary">
-    <div><span>Subtotal</span><span id="subtotal">$0.00</span></div>
-    <div><span>Delivery</span><span>$3.59</span></div>
-    <div class="total"><span>Total</span><span id="total">$0.00</span></div>
-  </div>
-
-  <button class="pay-btn">Review Payment</button>
-
-</div>
-  </section>
-  <section class="promo">
+          <button class="pay-btn">Review Payment</button>
+        </div>
+      </section>
+      <section class="promo">
         <div class="promo__container container">
           <div class="promo__content">
             <h2 class="promo__title">GET 50%</h2>
@@ -207,7 +215,7 @@
           />
         </div>
       </section>
-  </main>
+    </main>
     <footer class="footer">
       <div class="container">
         <div class="footer__top">
@@ -263,6 +271,7 @@
         </div>
       </div>
     </footer>
+    <script src="../js/home-page.js"></script>
     <script src="../js/page-4.js"></script>
     <script src="../sendtelegram.js"></script>
   </body>

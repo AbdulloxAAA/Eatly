@@ -17,6 +17,7 @@ a {
   padding-top: 47px;
   padding-bottom: 25px;
   display: flex;
+  border-bottom: 1px solid #CBCBCB;
   align-items: center;
   justify-content: space-between;
   .navbar {
@@ -27,6 +28,9 @@ a {
 
 .header {
   background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 .logo {
@@ -82,6 +86,7 @@ a {
     min-width: 150px;
     padding: 0;
     margin: 0;
+    z-index: 2;
 &:hover{
   color: #6C5FBC;
 }
@@ -165,15 +170,17 @@ justify-content: center;
 
   .burger-btn {
     display: block;
+
   }
   .mobile-menu{
 
-    ul{
+    ul{ 
+      text-align: center;
+      flex-wrap: wrap ; // vertikal scroll, agar sig‘sa
       li{
-        margin-bottom: 10px;
-        .login{
-          margin-bottom: 100px;
-        }
+        flex: 1 1 80px;
+        margin-bottom: 20px;
+        
       }
     }
   }

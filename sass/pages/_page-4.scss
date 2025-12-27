@@ -2,6 +2,7 @@
 .screen {
   border-radius: 28px;
   overflow: hidden;
+  margin-top: 180px;
   margin-bottom: 140px;
   z-index: 0;
   object-fit: cover;
@@ -19,6 +20,8 @@
   top: 20px;
   width: 368px;
   height: 454px;
+z-index: -2;
+opacity: 00.1;
 }
 /* CARD */
 .carde {
@@ -119,6 +122,10 @@
   .map-location {
     left: 10px;
   }
+ .carde{
+  margin-left: -10px;
+  margin-right: 15px;
+ }
   .mini-card {
     font-size: 7.83px;
     .nini-card {
@@ -130,7 +137,7 @@
     b {
       font-size: 8.7px;
     }
-    .btn {
+    .btne {
       width: 87px;
       height: 25px;
       font-size: 10px;
