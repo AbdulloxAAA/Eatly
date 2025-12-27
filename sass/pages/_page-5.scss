@@ -119,6 +119,13 @@ $bg: #f6f6fb;
 @media (max-width: 576px) {
   .pricing-section {
     padding-top: 20px;
+    
+  &::before {
+    content: "";
+
+    height: 154px;
+   
+  }
   }
 
   .pricing-title {
@@ -317,7 +324,7 @@ $text: #606060;
   max-width: 900px;
   margin: 120px auto;
   display: none;
-  gap: 30px;
+  gap: 50px;
   justify-content: center;
 
   opacity: 0;
@@ -331,28 +338,33 @@ $text: #606060;
 }
 
 .onlayn-card {
-  width: 280px;
+  width: 310px;
   padding: 26px;
   border-radius: 18px;
   background: #ffffff;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-  text-align: center;
-
-  &--premium {
-    border: 2px solid #7b5cff;
-  }
+ transition: 0.4s;
+&:hover{
+  backdrop-filter: blur(184.39422607421875px);
+ box-shadow: 0 12px 30px rgb(168, 168, 168);
+ transform: translateY(-20px);
+}
+ 
 }
 
 .onlayn-title {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 }
 
 .onlayn-price {
-  font-size: 38px;
+  font-size: 17px;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 23px;
+  #basicPrice,
+  #premiumPrice{
+font-size: 45px;
+  }
 }
 
 .onlayn-month {
@@ -361,17 +373,17 @@ $text: #606060;
 }
 
 .onlayn-desc {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 20px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #6E757C;
+  margin-bottom: 16px;
 }
 
 .onlayn-btn {
-  width: 100%;
-  padding: 14px;
+  padding: 12px 18px;
   border-radius: 12px;
   border: none;
-  background: #6c63ff;
+  background: #6C5FBC;
   color: #fff;
   font-weight: 600;
   cursor: pointer;
@@ -383,24 +395,32 @@ $text: #606060;
   }
 
   &--purple {
-    background: #7b5cff;
+    background: #6C5FBC;
   }
 }
 
 .onlayn-toggle {
+  display: block;
   background: none;
   border: none;
-  font-size: 14px;
-  font-weight: 600;
-  color: #6c63ff;
+  font-size: 13px;
+  font-weight: 700;
+  color: #272E35;
   cursor: pointer;
 }
 
 .onlayn-features {
   margin-top: 16px;
-  text-align: left;
+
   display: none;
 
+.onlayn-content{
+  display: flex;
+  gap: 15px;
+justify-content: start;
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
+}
   li {
     list-style: none;
     font-size: 14px;

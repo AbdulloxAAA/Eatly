@@ -22,7 +22,7 @@
   -webkit-backdrop-filter: blur(60px);
           backdrop-filter: blur(60px);
   background-color: rgba(187, 224, 255, 0.83);
-  z-index: 5;
+  z-index: 50;
   opacity: 1;
 }
 
@@ -131,7 +131,7 @@ a {
   background: #fff;
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 45;
 }
 
 .logo {
@@ -2283,6 +2283,7 @@ a {
 .testimonial__slider {
   position: absolute;
   padding-bottom: 90px;
+  padding-left: 40px;
 }
 .testimonial__track {
   margin-left: 40px;
@@ -2300,7 +2301,7 @@ a {
   cursor: pointer;
   max-height: 239px;
   opacity: 0.45;
-  transform: scale(0.95);
+  transform-origin: center center;
   overflow: hidden;
   transition: transform 0.45s ease, opacity 0.45s ease, max-height 0.55s ease, box-shadow 0.45s ease, padding 0.45s ease;
 }
@@ -2889,6 +2890,9 @@ a {
 }
 /* Mobil kichik ekranlar */
 @media (max-width: 480px) {
+  .hero {
+    margin-top: 100px;
+  }
   .heroleft .herospan {
     font-size: 9px;
     padding-left: 50px;
@@ -3228,7 +3232,7 @@ a {
     gap: 25px;
     padding: 20px 0;
     transform: scale(1);
-    margin: 20px auto;
+    margin: 150px auto 30px auto;
   }
   .gravity-right {
     max-width: 100%;
@@ -3342,7 +3346,7 @@ a {
 @media (max-width: 400px) {
   .nebula-root {
     width: 100%;
-    margin: 20px auto;
+    margin: 160px auto 30px auto;
     padding: 0 12px;
     gap: 20px;
     flex-direction: column;
@@ -3690,6 +3694,10 @@ a {
   .pricing-section {
     padding-top: 20px;
   }
+  .pricing-section::before {
+    content: "";
+    height: 154px;
+  }
   .pricing-title {
     font-size: 22px;
     margin-bottom: 20px;
@@ -3861,7 +3869,7 @@ a {
   max-width: 900px;
   margin: 120px auto;
   display: none;
-  gap: 30px;
+  gap: 50px;
   justify-content: center;
   opacity: 0;
   transform: translateY(60px);
@@ -3873,27 +3881,33 @@ a {
 }
 
 .onlayn-card {
-  width: 280px;
+  width: 310px;
   padding: 26px;
   border-radius: 18px;
   background: #ffffff;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-  text-align: center;
+  transition: 0.4s;
 }
-.onlayn-card--premium {
-  border: 2px solid #7b5cff;
+.onlayn-card:hover {
+  -webkit-backdrop-filter: blur(184.3942260742px);
+          backdrop-filter: blur(184.3942260742px);
+  box-shadow: 0 12px 30px rgb(168, 168, 168);
+  transform: translateY(-20px);
 }
 
 .onlayn-title {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 }
 
 .onlayn-price {
-  font-size: 38px;
+  font-size: 17px;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 23px;
+}
+.onlayn-price #basicPrice,
+.onlayn-price #premiumPrice {
+  font-size: 45px;
 }
 
 .onlayn-month {
@@ -3902,17 +3916,17 @@ a {
 }
 
 .onlayn-desc {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 20px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #6E757C;
+  margin-bottom: 16px;
 }
 
 .onlayn-btn {
-  width: 100%;
-  padding: 14px;
+  padding: 12px 18px;
   border-radius: 12px;
   border: none;
-  background: #6c63ff;
+  background: #6C5FBC;
   color: #fff;
   font-weight: 600;
   cursor: pointer;
@@ -3923,22 +3937,29 @@ a {
   background: #5a52e0;
 }
 .onlayn-btn--purple {
-  background: #7b5cff;
+  background: #6C5FBC;
 }
 
 .onlayn-toggle {
+  display: block;
   background: none;
   border: none;
-  font-size: 14px;
-  font-weight: 600;
-  color: #6c63ff;
+  font-size: 13px;
+  font-weight: 700;
+  color: #272E35;
   cursor: pointer;
 }
 
 .onlayn-features {
   margin-top: 16px;
-  text-align: left;
   display: none;
+}
+.onlayn-features .onlayn-content {
+  display: flex;
+  gap: 15px;
+  justify-content: start;
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
 }
 .onlayn-features li {
   list-style: none;
@@ -5047,6 +5068,236 @@ a {
   .signup .logoes {
     padding: 15px 5px;
     text-align: center;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+.signup__container {
+  width: 100%;
+  overflow-x: hidden;
+}
+.signup__left, .signup__right {
+  max-width: 100%;
+}
+.signup__form {
+  width: 100%;
+  max-width: 383px;
+}
+
+/* =========================
+   TABLET (≤1000px)
+========================= */
+@media (max-width: 1000px) {
+  .signup__container {
+    flex-direction: column;
+  }
+  .signup__left {
+    width: 100%;
+    padding: 60px 20px;
+    padding-top: 120px;
+  }
+  .signup__right {
+    display: none;
+  }
+  .signup__form {
+    max-width: 100%;
+  }
+}
+/* =========================
+   MOBILE (≤600px)
+========================= */
+@media (max-width: 600px) {
+  .signup__left {
+    padding: 30px 15px;
+  }
+  .signup__title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .signup__socials {
+    flex-wrap: wrap;
+  }
+  .signup__social {
+    width: 70px;
+    height: 40px;
+  }
+  .signup__con,
+  .signup__password {
+    padding: 14px;
+  }
+  .signup__input,
+  .signup__textarea,
+  .signup__password,
+  .signup__inputp {
+    width: 100%;
+    margin-left: 0;
+  }
+  .signup__btn {
+    padding: 18px;
+    font-size: 16px;
+  }
+}
+/* =========================
+   SMALL MOBILE (≤460px)
+========================= */
+@media (max-width: 460px) {
+  .signup__title {
+    font-size: 20px;
+  }
+  .signup__social {
+    width: 60px;
+    height: 36px;
+    font-size: 14px;
+  }
+  .signup__btn {
+    padding: 14px;
+    font-size: 14px;
+  }
+  .signup__textarea {
+    height: 70px;
+  }
+  .logoes {
+    padding: 15px 0;
+    text-align: center;
+  }
+}
+.login {
+  /* LEFT */
+  /* RIGHT */
+}
+.login__container {
+  display: flex;
+  min-height: 100vh;
+}
+.login__left {
+  width: 50%;
+  padding: 60px 80px;
+  text-align: center;
+}
+.login__logo {
+  text-align: left;
+  margin-bottom: 120px;
+}
+.login__title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+.login__socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.login__social {
+  width: 80px;
+  height: 45px;
+  border-radius: 10px;
+  background: #f3f3f3;
+  border: none;
+  cursor: pointer;
+}
+.login__or {
+  color: rgba(0, 90, 100, 0.35);
+  margin-bottom: 40px;
+}
+.login__form {
+  max-width: 380px;
+  margin: 0 auto;
+}
+.login__field {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px;
+  border: 1.5px solid #6c5fbc;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.login__field input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+.login__password {
+  position: relative;
+}
+.login__eye {
+  position: absolute;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #6c5fbc;
+}
+.login__forgot {
+  display: block;
+  text-align: right;
+  font-size: 13px;
+  color: #6c5fbc;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.login__btn {
+  width: 100%;
+  padding: 18px;
+  border-radius: 14px;
+  background: #6c5fbc;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.login__signup {
+  margin-top: 25px;
+  font-size: 14px;
+}
+.login__signup a {
+  color: #6c5fbc;
+  font-weight: 600;
+  text-decoration: none;
+}
+.login__right {
+  width: 50%;
+  background: #6c5fbc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.login__content {
+  max-width: 400px;
+  text-align: center;
+}
+.login__content img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.login__content h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.login__content p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .login__container {
+    flex-direction: column;
+  }
+  .login__right {
+    display: none;
+  }
+  .login__left {
+    width: 100%;
+    padding: 40px 20px;
   }
 }
 .stats {

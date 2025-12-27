@@ -11,6 +11,7 @@
   &__slider {
     position: absolute;
     padding-bottom: 90px;
+    padding-left: 40px;
   }
 
   &__track {
@@ -29,7 +30,7 @@
     cursor: pointer;
     max-height: 239px;
     opacity: 0.45;
-    transform: scale(0.95);
+   transform-origin: center center;
     overflow: hidden;
     transition: transform 0.45s ease, opacity 0.45s ease, max-height 0.55s ease,
       box-shadow 0.45s ease, padding 0.45s ease;

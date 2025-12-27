@@ -348,3 +348,116 @@
     text-align: center;
   }
 }
+* {
+  box-sizing: border-box;
+}
+
+.signup {
+  &__container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  &__left,
+  &__right {
+    max-width: 100%;
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 383px;
+  }
+}
+
+/* =========================
+   TABLET (≤1000px)
+========================= */
+@media (max-width: 1000px) {
+  .signup__container {
+    flex-direction: column;
+  }
+
+  .signup__left {
+    width: 100%;
+    padding: 60px 20px;
+    padding-top: 120px;
+  }
+
+  .signup__right {
+    display: none;
+  }
+
+  .signup__form {
+    max-width: 100%;
+  }
+}
+
+/* =========================
+   MOBILE (≤600px)
+========================= */
+@media (max-width: 600px) {
+  .signup__left {
+    padding: 30px 15px;
+  }
+
+  .signup__title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .signup__socials {
+    flex-wrap: wrap;
+  }
+
+  .signup__social {
+    width: 70px;
+    height: 40px;
+  }
+
+  .signup__con,
+  .signup__password {
+    padding: 14px;
+  }
+
+  .signup__input,
+  .signup__textarea,
+  .signup__password,
+  .signup__inputp {
+    width: 100%;
+    margin-left: 0;   // MUHIM
+  }
+
+  .signup__btn {
+    padding: 18px;
+    font-size: 16px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE (≤460px)
+========================= */
+@media (max-width: 460px) {
+  .signup__title {
+    font-size: 20px;
+  }
+
+  .signup__social {
+    width: 60px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .signup__btn {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .signup__textarea {
+    height: 70px;
+  }
+
+  .logoes {
+    padding: 15px 0;
+    text-align: center;
+  }
+}

@@ -204,6 +204,9 @@ padding-bottom: 80px;
 
 /* Mobil kichik ekranlar */
 @media (max-width: 480px) {
+  .hero{
+    margin-top: 100px;
+  }
 .heroleft{
   .herospan{
     font-size: 9px;

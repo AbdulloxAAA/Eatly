@@ -1,0 +1,159 @@
+.login {
+  &__container {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  /* LEFT */
+  &__left {
+    width: 50%;
+    padding: 60px 80px;
+    text-align: center;
+  }
+
+  &__logo {
+    text-align: left;
+    margin-bottom: 120px;
+  }
+
+  &__title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  &__social {
+    width: 80px;
+    height: 45px;
+    border-radius: 10px;
+    background: #f3f3f3;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__or {
+    color: rgba(0, 90, 100, 0.35);
+    margin-bottom: 40px;
+  }
+
+  &__form {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  &__field {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px;
+    border: 1.5px solid #6c5fbc;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+    input {
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+
+  &__password {
+    position: relative;
+  }
+
+  &__eye {
+    position: absolute;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #6c5fbc;
+  }
+
+  &__forgot {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    color: #6c5fbc;
+    margin-bottom: 30px;
+    text-decoration: none;
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 18px;
+    border-radius: 14px;
+    background: #6c5fbc;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  &__signup {
+    margin-top: 25px;
+    font-size: 14px;
+
+    a {
+      color: #6c5fbc;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+
+  /* RIGHT */
+  &__right {
+    width: 50%;
+    background: #6c5fbc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  &__content {
+    max-width: 400px;
+    text-align: center;
+
+    img {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .login__container {
+    flex-direction: column;
+  }
+
+  .login__right {
+    display: none;
+  }
+
+  .login__left {
+    width: 100%;
+    padding: 40px 20px;
+  }
+}
