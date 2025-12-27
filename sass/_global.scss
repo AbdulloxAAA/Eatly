@@ -40,14 +40,14 @@ z-index: 5;
     width: 20px;
   }
   .loader:before {
-    animation: ball1 1s infinite;
-    background-color: #fff;
-    box-shadow: 30px 0 0 #ff3d00;
+    animation: ball 11s infinite;
+    background-color:  #fff;
+    box-shadow: 30px 0 0 #6C5FBC;
     margin-bottom: 10px;
   }
   .loader:after {
     animation: ball2 1s infinite;
-    background-color: #ff3d00;
+    background-color: #6C5FBC;
     box-shadow: 30px 0 0 #fff;
   }
 
