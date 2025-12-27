@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hr{
+  width: 100%;
+  border: 1px solid #CBCBCB;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.header-container {
+  padding-top: 47px;
+  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header {
+  background: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 103px;
+  a{
+    text-decoration: none;
+  }
+  img{
+    width: 100px;
+    height: 38px;
+  }
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+ li{
+  a{
+     font-size: 17.83px;
+   color: #606060;
+    font-weight: 500;
+    &:hover{
+      color: #6C5FBC;
+    }
+  }
+ }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+ a{
+  font-size: 17.83px;
+  font-weight: 500;
+  &:hover{
+  color: #6C5FBC;
+}
+}
+  .dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    min-width: 150px;
+    padding: 0;
+    margin: 0;
+&:hover{
+  color: #6C5FBC;
+}
+    li a {
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #606060;
+
+      &:hover {
+        background: white;
+      }
+    }
+  }
+
+  &.active .dropdown-menu {
+    display: block; 
+  }
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8.91px;
+ 
+}
+ .login{
+    padding: 17.83px 26px;
+    color: #606060;
+    font-size: 17px;
+    font-weight: 700;
+  }
+.btn {
+  background: #6C5FBC;
+  color: #F9F9F9;
+  font-size: 17.83px;
+  font-weight: 700;
+  padding: 17px 26px;
+  border-radius: 20px;
+}
+
+.burger-btn {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* MOBILE */
+.mobile-menu {
+  background: #fff;
+  padding: 20px;
+.menu-btn{
+display: flex;
+justify-content: center;
+  margin: 0 auto;
+}
+  ul {
+    list-style: none;
+    display: flex;
+ justify-content: space-around;
+ margin-bottom: 20px;
+    li{
+      display: inline-block;
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+@media (max-width: 795px) {
+  .nav,
+  .actions {
+    display: none;
+  }
+
+  .burger-btn {
+    display: block;
+  }
+  .mobile-menu{
+
+    ul{
+      li{
+        margin-bottom: 10px;
+        .login{
+          margin-bottom: 100px;
+        }
+      }
+    }
+  }
+}

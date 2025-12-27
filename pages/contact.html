@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Eatly - Figma</title>
+    <link rel="icon" href="../images/header/Logo eatly.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../sass/main.scss" />
+    <link rel="stylesheet" href="../sass/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="/"> <img src="../images/header/Logo.png" alt="" /></a>
+          </div>
+           <nav class="nav">
+            <ul class="nav-list">
+                           <div class="dropdown">
+  <a href="#" class="dropdown-btn">Menu ▾</a>
+  <ul class="dropdown-menu">
+    <li><a href="../pages/page-2.html">Menu 1</a></li>
+    <li><a href="../pages/page-3.html">Menu 2</a></li>
+    <li><a href="../pages/page-4.html">Menu 3</a></li>
+  </ul>
+</div>
+              <li><a href="../pages/pagr-5.html">Pricing</a></li>
+              <li><a href="../pages/page-6.html">Blog 1</a></li>
+              <li><a href="../pages/page-7.html">Blog 2</a></li>
+              <li><a href="../pages/contact.html">Contact</a></li>
+
+            </ul>
+          </nav>
+        </div>
+
+        <div class="actions">
+          <a href="#" class="login">Login</a>
+          <a href="../pages/sign-up.html" class="btn">Sign Up</a>
+        </div>
+
+        <button class="burger-btn">☰</button>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu d-none">
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <a href="#" class="login">Login</a>
+          <a href="#" class="btn">Sign Up</a>
+        </div>
+      </div>
+    </header>
+    <div class="container hr"></div>
+   <main>
+  <section class="contact">
+  <div class="contact__container container">
+
+    <!-- LEFT SIDE -->
+    <div class="contact__left">
+      <h2 class="contact__brand">Just Contact
+        <img src="../images/stat/chiziq8.png" alt="">
+      </h2>
+
+      <div class="contact__phone">
+        <img
+          src="../images/stat/Mobile.png"
+          alt="Mobile App"
+        />
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="contact__right">
+      <div class="contact__us">
+          <h4>Contact Us </h4>
+          <img src="../images/stat/Arrow (1).png" alt="">
+      </div>
+      <h3 class="contact__title">
+        Customer <span>Support</span>
+      </h3>
+
+      <form
+        class="contact__form"
+        onsubmit="return sendTelegramMessage()"
+      >
+        <input
+          type="text"
+          class="contact__input"
+          id="user-name"
+          name="user-name"
+          placeholder="Full Name"
+          autocomplete="off"
+          required
+        />
+
+        <input
+          type="email"
+          class="contact__input"
+          id="user-email"
+          name="user-email"
+          placeholder="Enter Your Email"
+          autocomplete="off"
+          required
+        />
+
+        <textarea
+          class="contact__textarea"
+          id="user-message"
+          name="user-message"
+          placeholder="Enter the problem or query"
+          required
+        ></textarea>
+
+        <button
+          type="submit"
+          class="contact__btn"
+        >
+          Send Now
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>  
+   </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <img
+              src="../images/header/Logo.png"
+              alt="Eatly"
+              class="footer__logo"
+            />
+            <div class="footer__socials">
+              <a href="#"
+                ><img class="a1" src="../images/footer/instagram.png" alt=""
+              /></a>
+              <a href="#"
+                ><img class="a2" src="../images/footer/Path 7.png" alt=""
+              /></a>
+              <a href="#"
+                ><img class="a3" src="../images/footer/Path 13.png" alt=""
+              /></a>
+              <a href="#"
+                ><img class="a4" src="../images/footer/Path 6.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <ul class="footer__nav">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__divider"></div>
+
+        <div class="footer__bottom">
+          <p class="footer__copy">© 2023 EATLY All Rights Reserved.</p>
+
+          <div class="footer__socials">
+            <a href="#"
+              ><img class="a1" src="../images/footer/instagram.png" alt=""
+            /></a>
+            <a href="#"
+              ><img class="a2" src="../images/footer/Path 7.png" alt=""
+            /></a>
+            <a href="#"
+              ><img class="a3" src="../images/footer/Path 13.png" alt=""
+            /></a>
+            <a href="#"
+              ><img class="a4" src="../images/footer/Path 6.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/page-6.js"></script>
+    <script src="../sendtelegram2.js"></script>
+  </body>
+</html>

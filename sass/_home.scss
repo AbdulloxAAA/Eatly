@@ -1,0 +1,232 @@
+.hero {
+  padding: 80px 0px; // kichik ekranlarda chekka paddingni kamaytirdik
+  font-family: Inter;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 37px;
+  flex-wrap: wrap; // elementlar siqilsa keyingi qatorda chiqsin
+}
+
+.highlight {
+  color: #5c4eae;
+  font-weight: 700;
+}
+
+.highlight2 {
+  color: #5c4eae;
+  font-weight: 400;
+}
+
+/* LEFT */
+.heroleft {
+  max-width: 520px;
+  flex: 1 1 100%;
+
+  .herospan {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: #201f1f33;
+    font-weight: 600;
+    margin-bottom: 18px;
+    padding-left: 60px;
+
+    .herospan-line {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 2px;
+      background: #201f1f33;
+      border-radius: 1px;
+    }
+  }
+
+  h1 {
+    font-size: 75px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 16px;
+    width: 550px; 
+  }
+
+  p {
+    font-size: 18px;
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 53px;
+    width: 499px; // responsive
+  }
+}
+
+/* ACTION BUTTONS */
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  button {
+    padding: 18px 27px;
+    font-size: 14px;
+    border-radius: 12.41px;
+    border: 1px solid #6C5FBC;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  button:first-child {
+    color: #6C5FBC;
+    background-color: white;
+    &:hover {
+      background: #6C5FBC;
+      color: white;
+    }
+  }
+
+  button:last-child {
+    background: transparent;
+    border: 1px solid #8b5cf6;
+    color: #8b5cf6;
+
+    &:hover {
+      background: #6C5FBC;
+      color: white;
+    }
+  }
+}
+
+/* RATING */
+.heroleft-rating {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  img:first-child {
+    width: 24px;
+  }
+
+  h6 {
+    margin-left: 2px;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+  }
+
+  img:nth-child(3) {
+    width: 70px;
+    margin-right: 9px;
+  }
+
+  span {
+    font-size: 13px;
+    color: #6b7280;
+  }
+}
+
+/* RIGHT IMAGE */
+.hero-right {  
+  width: 100%;
+  max-width: 600px; // desktop va tabletlarda cheklash
+  flex: 1 1 100%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+
+/* Laptop & tablet */
+@media (max-width: 900px) {
+  .hero-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .heroleft-rating {
+    justify-content: center;
+  }
+
+.heroleft{
+  .herospan{
+    color: #201F1F;
+    .herospan-line{
+      background: #201F1F;
+    }
+  }
+    h1 {
+    font-size: 55px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+}
+
+/* Tablet portret & mobil */
+@media (max-width: 768px) {
+.heroleft{
+    h1 {
+    font-size: 46px;
+    width: 400px;
+  }
+
+  p {
+    font-size: 11px;
+    width: 307px;
+  }
+
+  .hero-actions {
+    gap: 12px;
+  }
+
+
+}
+}
+
+/* Mobil kichik ekranlar */
+@media (max-width: 480px) {
+.heroleft{
+  .herospan{
+    font-size: 9px;
+    padding-left: 50px;
+    .herospan-line{
+      width: 33px;
+    }
+  }
+    h1 {
+    font-size: 32px;
+    width: 332px;
+  }
+
+  p {
+    font-size: 11px;
+
+  }
+.hero-actions{
+  button{
+    padding: 14px;
+  }
+}
+}
+  .hero {
+    padding: 60px 15px;
+  }
+}

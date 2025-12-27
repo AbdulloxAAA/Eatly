@@ -1,0 +1,311 @@
+.article-hero {
+  padding: 80px 0;
+
+  &__title {
+    font-size: 37px;
+    font-weight: 600;
+    color: #252525;
+    margin-bottom: 32px;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+
+  &__avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    color: #8D8D8D;
+font-weight: 500;
+    strong {
+      display: block;
+      color: #000;
+      font-size: 21px;
+      font-weight: 500;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 403px;
+    overflow: hidden;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+  }
+
+ 
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .article-hero {
+    padding: 60px 0;
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__image {
+      height: 200px;
+    }
+  }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////
+/// /////////////////////////////////////////
+/// ///////////
+.guide-section {
+  padding: 60px 0;
+  background: #fff;
+
+  .content {
+   display: flex;
+   align-items: start;
+   row-gap: 50px;
+   column-gap: 100px;
+  }
+
+  .steps {
+    .step {
+      margin-bottom: 30px;
+
+      h3 {
+        font-size: 33px;
+        font-weight: 600;
+        margin-bottom: 35px;
+      }
+
+      p {
+        color: #252525;
+        line-height: 1.6;
+        font-size: 22px;
+        margin-bottom: 80px;
+        width: 800px;
+      }
+
+      ul {
+        padding-left: 18px;
+margin-bottom: 100px;
+        li {
+          color:#252525;
+          font-size: 22px;
+          margin-bottom: 6px;
+        }
+      }
+    }
+
+    .btni {
+      margin-top: 100px;
+      padding: 24px 27px;
+      border: none;
+      border-radius: 8px;
+      background: #6C5FBC;
+      color: #fff;
+      font-weight: 600;
+      font-size: 20px;
+      cursor: pointer;
+
+      &:hover {
+        background: darken(#6c5ce7, 5%);
+      }
+    }
+  }
+
+  .articles {
+    margin-top: -90px;
+    h4 {
+      font-size: 33px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .article-card {
+      background: #f8f8f8;
+      padding: 21px 16px 30px 17px;
+      border-radius: 10px;
+      margin-bottom: 43px;
+height: 376px;
+.conpink{
+    display: flex;
+    align-items: start;
+gap: 15px;
+div{
+    margin-right:25px ;
+}
+    img{
+        width: 37px;
+        height: 37px; border-radius: 50%;
+    }
+    span{
+        color: #8D8D8D;
+        font-size: 10px;
+
+    }
+    .pi{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .data{
+        font-size: 12px;
+        font-weight: 500;
+        color: #B7B4B4;
+    }
+}
+      img {
+        width: 264px;
+        height: 232px;
+        border-radius: 8px;
+        object-fit: cover;
+        margin-bottom: 18px;
+      }
+
+      h5 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #252525;
+        margin-bottom: 17px;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .guide-section {
+    padding: 40px 0;
+
+    .content {
+      column-gap: 50px;
+    }
+
+    .steps {
+      .step {
+        h3 {
+          font-size: 26px;
+          margin-bottom: 25px;
+        }
+
+        p {
+          font-size: 18px;
+          width: 100%;
+          margin-bottom: 50px;
+        }
+
+        ul {
+          margin-bottom: 60px;
+
+          li {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .btni {
+        padding: 18px 22px;
+        font-size: 18px;
+        margin-top: 60px;
+      }
+    }
+
+    .articles {
+      h4 {
+        font-size: 26px;
+      }
+
+      .article-card {
+        height: auto;
+
+        img {
+          width: 100%;
+          height: 200px;
+        }
+
+        h5 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+/* ====== Small Tablet & Mobile (<= 1000px) ====== */
+@media (max-width: 1000px) {
+  .guide-section {
+    .content {
+      flex-direction: column;
+      row-gap: 40px;
+    }
+
+    /* ❌ O‘ng tarafdagi cardlar yo‘qoladi */
+    .articles {
+      display: none;
+    }
+
+    .steps {
+      .step {
+        h3 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 17px;
+        }
+
+        ul li {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+/* ====== Mobile (<= 600px) ====== */
+@media (max-width: 600px) {
+  .guide-section {
+    padding: 30px 0;
+
+    .steps {
+      .step {
+        margin-bottom: 20px;
+
+        h3 {
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
+
+        p {
+          font-size: 15px;
+          line-height: 1.5;
+          margin-bottom: 35px;
+        }
+
+        ul {
+          padding-left: 14px;
+
+          li {
+            font-size: 15px;
+          }
+        }
+      }
+
+      .btni {
+        width: 100%;
+        padding: 16px;
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Eatly - Figma</title>
+    <link rel="icon" href="./images/header/Logo eatly.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../sass/main.scss" />
+    <link rel="stylesheet" href="../sass/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="/"> <img src="../images/header/Logo.png" alt="" /></a>
+          </div>
+            <nav class="nav">
+            <ul class="nav-list">
+                           <div class="dropdown">
+  <a href="#" class="dropdown-btn">Menu ▾</a>
+  <ul class="dropdown-menu">
+    <li><a href="../pages/page-2.html">Menu 1</a></li>
+    <li><a href="../pages/page-3.html">Menu 2</a></li>
+    <li><a href="../pages/page-4.html">Menu 3</a></li>
+  </ul>
+</div>
+              <li><a href="../pages/pagr-5.html">Pricing</a></li>
+              <li><a href="../pages/page-6.html">Blog 1</a></li>
+              <li><a href="../pages/page-7.html">Blog 2</a></li>
+              <li><a href="../pages/contact.html">Contact</a></li>
+
+            </ul>
+          </nav>
+        </div>
+
+        <div class="actions">
+          <a href="#" class="login">Login</a>
+          <a href="../pages/sign-up.html" class="btn">Sign Up</a>
+        </div>
+
+        <button class="burger-btn">☰</button>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu d-none">
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <a href="#" class="login">Login</a>
+          <a href="#" class="btn">Sign Up</a>
+        </div>
+      </div>
+    </header>
+    <div class="container hr"></div>
+  <main>
+      <section class="pricing-section">
+  <div class="pricing-container container">
+    <h2 class="pricing-title">
+      Our Pricing
+      <span class="arrow"></span>
+    </h2>
+
+    <div class="dashboard-wrapper">
+    
+      <div class="dashboard-image">
+       <img src="../images/page-5/admin-panel.png" alt="">
+      </div>
+    </div>
+
+    <span class="decor decor-left"></span>
+    <span class="decor decor-right"></span>
+  </div>
+</section>
+<section class="plans-area">
+  <div class="plans-box container">
+
+    <!-- TOP -->
+    <div class="plans-head">
+      <div class="plans-head__info">
+        <h2>Pricing</h2>
+        <span>Affordable Basic & Pro Plans</span>
+      </div>
+      <div class="plans-head__item">
+        <h3>Basic</h3>
+        <p>100% Free Plan</p>
+      </div>
+      <div class="plans-head__item">
+        <h3>Premium</h3>
+        <p>Advanced Features</p>
+      </div>
+    </div>
+
+    <!-- PRICE -->
+  <div class="plans-cost">
+  <div></div>
+
+  <div class="cost-card">
+    $<span id="basicPrice">0</span>/month
+  </div>
+
+  <div class="cost-card">
+    $<span id="premiumPrice">0</span>/month
+  </div>
+</div>
+
+    <!-- FEATURES -->
+    <div class="plans-list">
+      <div class="plans-text">Support 24/7</div>
+      <div class="icon yes"></div>
+      <div class="icon yes"></div>
+
+      <div class="plans-text">Fast Delivery</div>
+      <div class="icon yes"></div>
+      <div class="icon yes"></div>
+
+      <div class="plans-text">20% Food Discount</div>
+      <div class="icon yes"></div>
+      <div class="icon yes"></div>
+
+      <div class="plans-text">Transaction History</div>
+      <div class="icon yes"></div>
+      <div class="icon yes"></div>
+
+      <div class="plans-text">Weekend Deals</div>
+      <div class="icon no"></div>
+      <div class="icon yes"></div>
+
+      <div class="plans-text">Dashboard Access</div>
+      <div class="icon no"></div>
+      <div class="icon yes"></div>
+
+      <div class="plans-text">Private Community</div>
+      <div class="icon no"></div>
+      <div class="icon yes"></div>
+    </div>
+
+    <!-- ACTION -->
+    <div class="plans-action">
+      <div></div>
+      <button class="action-btn free-btn">Start Free</button>
+      <button class="action-btn pro-btn">Start Pro</button>
+    </div>
+
+  </div>
+</section>
+  <section class="dashboard">
+        <div class="dashboard__container container">
+          <div class="dashboard__left">
+            <h2 class="dashboard__title">
+              Control <span>Purchases</span><br />
+              Via Dashboard
+            </h2>
+
+            <div class="orders">
+              <div class="order-card">
+                <img src="../images/product-2/salt1.png" alt="" />
+                <div>
+                  <h4>Chicken Hell</h4>
+                  <p class="status">On The Way</p>
+                  <span class="time">3:09 PM</span>
+                </div>
+              </div>
+
+              <div class="order-card">
+                <img src="../images/product-2/salt2.png" alt="" />
+                <div>
+                  <h4>Swe Dish</h4>
+                  <p class="status delivered">Delivered</p>
+                  <span class="time">Yesterday</span>
+                </div>
+              </div>
+
+              <div class="order-card">
+                <img src="../images/product-2/salt3.png" alt="" />
+                <div>
+                  <h4>Fish Hell Veg</h4>
+                  <p class="status cancelled">Cancelled</p>
+                  <span class="time">Yesterday</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard__right">
+            <div class="purchases">
+              <div class="purchases__header">
+                <h3>Purchases</h3>
+                <select>
+                  <option>This month</option>
+                </select>
+              </div>
+
+              <div class="purchase-card purple">
+                <div class="infoes">
+                  <div class="icon">
+                    <img src="../images/product-2/wallet.png" alt="" />
+                  </div>
+
+                  <div class="infoes-p">
+                    <h4>Expense</h4>
+                    <p>Increased By 10%</p>
+                  </div>
+                  <span class="price">$409.00</span>
+                </div>
+                <div class="progress">
+                  <img src="../images/product-2/divider.png" alt="" />
+                </div>
+              </div>
+              <div class="purchase-card orange">
+                <div class="infoes">
+                  <div class="icon">
+                    <img src="../images/product-2/money.png" alt="" />
+                  </div>
+
+                  <div class="infoes-p">
+                    <h4>Vocher Usage</h4>
+                    <p>Increased By 5%</p>
+                  </div>
+                  <span class="price">$45.78</span>
+                </div>
+                <div class="progress">
+                  <img src="../images/product-2/divider (2).png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       <div class="container hr"></div>
+      <!-- testimonial -->
+      <section class="testimonial">
+        <div class="container">
+          <h2 class="testimonial__title">Customer Say</h2>
+
+          <div class="testimonial__slider">
+            <div class="testimonial__track" id="testimonialTrack"></div>
+          </div>
+
+          <div class="testimonial__progress">
+            <div class="testimonial__dots" id="carouselDots"></div>
+          </div>
+        </div>
+      </section>
+  </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <img
+              src="../images/header/Logo.png"
+              alt="Eatly"
+              class="footer__logo"
+            />
+            <div class="footer__socials">
+              <a href="#"
+                ><img class="a1" src="../images/footer/instagram.png" alt=""
+              /></a>
+              <a href="#"
+                ><img class="a2" src="../images/footer/Path 7.png" alt=""
+              /></a>
+              <a href="#"
+                ><img class="a3" src="../images/footer/Path 13.png" alt=""
+              /></a>
+              <a href="#"
+                ><img class="a4" src="../images/footer/Path 6.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <ul class="footer__nav">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__divider"></div>
+
+        <div class="footer__bottom">
+          <p class="footer__copy">© 2023 EATLY All Rights Reserved.</p>
+
+          <div class="footer__socials">
+            <a href="#"
+              ><img class="a1" src="../images/footer/instagram.png" alt=""
+            /></a>
+            <a href="#"
+              ><img class="a2" src="../images/footer/Path 7.png" alt=""
+            /></a>
+            <a href="#"
+              ><img class="a3" src="../images/footer/Path 13.png" alt=""
+            /></a>
+            <a href="#"
+              ><img class="a4" src="../images/footer/Path 6.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/page-5.js"></script>
+    <script src="../js/products-data.js"></script>
+    <script src="../sendtelegram.js"></script>
+  </body>
+</html>

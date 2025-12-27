@@ -1,0 +1,166 @@
+.footer {
+  background: #EAEAEA;
+  padding-top: 96px;
+  padding-bottom: 81px;
+}
+
+/* TOP */
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .footer__socials{
+    display: none;
+  }
+}
+
+.footer__logo {
+width: 150px;
+height: 57px;
+}
+
+.footer__name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #6c5ce7;
+}
+
+/* NAV */
+.footer__nav {
+  display: flex;
+  gap: 70px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__nav a {
+  font-size: 17px;
+  font-weight: 500;
+  color: #999999;
+  text-decoration: none;
+}
+
+.footer__nav a:hover {
+  color: #000;
+}
+
+/* DIVIDER */
+.footer__divider {
+border: 1px solid #DCDCDC;
+  background: #818181;
+margin-bottom: 57px;
+margin-top: 29px;
+}
+
+/* BOTTOM */
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.footer__copy {
+  font-size: 17px;
+  font-weight: 500;
+  color: #999999;
+  margin: 0;
+}
+
+/* SOCIALS */
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+}
+
+.footer__socials img {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.footer__socials img:hover {
+  opacity: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer__top,
+  .footer__bottom {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .footer__nav {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+@media (max-width: 550px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  /* TOP */
+  .footer__top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .footer__brand {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 99px;
+    .footer__logo{
+      width: 99px;
+      height: 37px;
+    }
+    .footer__socials{
+      display: flex;
+    }
+  }
+
+  /* NAV */
+  .footer__nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer__nav a {
+    font-size: 16px;
+  }
+
+  /* DIVIDER */
+  .footer__divider {
+    margin: 24px 0;
+  }
+
+  /* BOTTOM */
+  .footer__bottom {
+    text-align: center;
+    gap: 16px;
+  }
+
+  /* SOCIALS */
+  .footer__socials {
+    gap: 24px;
+    display: none;
+  }
+
+  .footer__copy {
+    font-size: 14px;
+ display: flex;
+ justify-content: center;
+ margin: 0 auto;
+  }
+}

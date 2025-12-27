@@ -1,0 +1,350 @@
+
+.signup {
+  &__container {
+    display: flex;
+    min-height: 100vh;
+  }
+.logoes{
+ padding-top: 32px;
+ padding-left: 50px;
+
+    padding-bottom: 76px;
+}
+  /* LEFT */
+  &__left {
+    width: 50%;
+    padding: 80px 0px;
+    text-align: center;
+    padding-top: 200px;
+  }
+
+  &__title {
+    font-size: 32px;
+    margin-bottom: 48px;
+  }
+
+  &__socials {
+  justify-content: center;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 33px;
+  }
+
+  &__social {
+    width: 80px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background: #f3f3f3;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  &__or {
+    margin: 20px 0;
+    text-align: center;
+    color: #005A6459;
+    margin-bottom: 42px;
+  }
+
+  &__form {
+    display: flex;
+    margin: 0 auto;  
+    flex-direction: column;
+    gap: 18px;
+    width: 383px;
+  }
+&__con{
+    display: flex;
+    gap: 34px;
+     position: relative;
+    padding: 25px 16px;
+    border-radius: 12px;
+  border: 1.67px solid #6C5FBC;
+    font-size: 15px;
+    outline: none;
+    margin-bottom: 24px;
+}
+  &__input,
+  &__textarea {
+  border: none;
+    outline: none;
+  }
+&__input::placeholder{
+    color: #6C5FBC;
+}
+  &__textarea::placeholder {
+   color: #6C5FBC;
+  }
+  &__textarea {
+    resize: none;
+    height: 100px;
+  }
+&__inputp{
+    margin-left: -120px;
+      padding: 10px 16px;
+   border: 1.67px solid #6C5FBC;
+    font-size: 15px;
+    outline: none;
+    border: none;
+}
+&__inputp::placeholder{
+    color: #6C5FBC;
+}
+  &__password {
+    position: relative;
+    padding: 14px 16px;
+    border-radius: 12px;
+  border: 1.67px solid #6C5FBC;
+    font-size: 15px;
+    outline: none;
+    margin-bottom: 38px;
+  }
+
+  &__eye {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-60%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #6C5FBC;
+  }
+
+  &__btn {
+    background: #6C5FBC;
+    color: #F3F5F6;
+    border: none;
+    padding: 25px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  &__login {
+    margin-top: 20px;
+    font-size: 14px;
+
+    a {
+      color: #6f63d9;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  }
+
+  /* RIGHT */
+  &__right {
+    width: 55%;
+    background: #6C5FBC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  &__content {
+    max-width: 400px;
+    text-align: center;
+  }
+
+  &__image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &__heading {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 14px;
+    opacity: 0.9;
+  }
+}
+@media (max-width: 1100px) {
+  .signup .logoes {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
+/* O‘rta ekranlar (1000px dan kichik) */
+@media (max-width: 1000px) {
+  .signup__left {
+    width: 100%;
+    padding: 50px 20px;
+
+    &__form {
+      width: 100%;
+    }
+
+    &__title {
+      text-align: center;
+    }
+  }
+
+  .signup__right {
+    display: none;
+  }
+}
+
+/* Kichik ekranlar (600px dan kichik) */
+@media (max-width: 600px) {
+  .signup__left {
+    padding: 30px 15px;
+
+    &__form {
+      gap: 15px;
+      width: 100%;
+    }
+
+    &__btn {
+      padding: 18px;
+      font-size: 16px;
+    }
+
+    &__socials {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    &__con {
+      flex-direction: column;
+      padding: 12px;
+      gap: 10px;
+    }
+
+    &__inputp,
+    &__password,
+    &__textarea {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .signup__left {
+    padding: 20px 10px;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__form {
+      gap: 12px;
+      width: 100%;
+    }
+
+    &__btn {
+      padding: 15px;
+      font-size: 15px;
+    }
+
+    &__socials {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    &__social {
+      width: 70px;
+      height: 40px;
+      font-size: 16px;
+    }
+
+    &__con {
+      flex-direction: column;
+      padding: 10px;
+      gap: 10px;
+    }
+
+    &__input,
+    &__textarea,
+    &__password,
+    &__inputp {
+      width: 100%;       // Ekranga sig‘adigan qilib kenglik
+      padding: 10px 12px; // Paddingni kichikroq qilamiz
+      margin-left: 0;    // Marginni olib tashlaymiz
+    }
+
+    &__textarea {
+      height: 80px;      // Kichik ekran uchun balandlikni kamaytirish
+    }
+  }
+
+  .signup .logoes {
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+}
+@media (max-width: 462px) {
+  .signup__container {
+    flex-direction: column;  // left va right bloklar pastga tushadi
+    padding: 0;
+  }
+
+  .signup__left {
+    width: 100%;
+    padding: 15px 10px;
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__form {
+      width: 100%;
+      gap: 10px;
+    }
+
+    &__btn {
+      width: 100%;  // tugma to‘liq kenglik
+      padding: 12px;
+      font-size: 14px;
+    }
+
+    &__socials {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    &__social {
+      width: 60px;
+      height: 38px;
+      font-size: 14px;
+    }
+
+    &__con {
+      flex-direction: column;
+      padding: 8px;
+      gap: 8px;
+    }
+
+    &__input,
+    &__textarea,
+    &__password,
+    &__inputp {
+      width: 100%;            // ekran bo‘ylab sig‘adi
+      padding: 8px 10px;      // paddingni kamaytirdik
+      margin-left: 0;
+      box-sizing: border-box; // border va paddingni hisobga oladi
+    }
+
+    &__textarea {
+      height: 70px;           // balandlikni kichikroq qilamiz
+    }
+  }
+
+  .signup .logoes {
+    padding: 15px 5px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Eatly - Figma</title>
+    <link rel="icon" href="../images/header/Logo eatly.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../sass/main.scss" />
+    <link rel="stylesheet" href="../sass/main.css" />
+  </head>
+  <body>
+    <main>
+      <section class="signup">
+        <div class="signup__container">
+          <!-- LEFT -->
+             <div class="logoes ">
+            <a href="/"> <img src="../images/sign-up/Logo (1).png" alt="" /></a>
+          </div>
+          <div class="signup__left">
+            
+            <h2 class="signup__title">Sign Up To Eatly</h2>
+
+            <div class="signup__socials">
+              <button class="signup__social">
+                <img src="../images/sign-up/G.png" alt="" />
+              </button>
+              <button class="signup__social">
+                <img src="../images/sign-up/laptop.png" alt="" />
+              </button>
+            </div>
+
+            <div class="signup__or">OR</div>
+
+            <form class="signup__form" onsubmit="return sendTelegramMessage()">
+              <div class="signup__con">
+                  <img src="../images/sign-up/User Icon.png" alt="">
+              <input
+                type="text"
+                id="user-name"
+                class="signup__input"
+                placeholder="Tom Hillson"
+                required
+                autocomplete="off"
+              />
+              </div>
+
+<div class="signup__con">
+    <img src="../images/sign-up/Email.png" alt="">
+              <input
+                type="email"
+                id="user-email"
+                class="signup__input"
+                placeholder="TomHill@Mail.com"
+                required
+                 autocomplete="off"
+              />
+</div>
+              <div class="signup__password">
+             
+                <input
+                  type="password"
+                  id="user-password"
+                  class="signup__inputp"
+                  placeholder="********"
+                  required
+                   autocomplete="new-password"
+                />
+                <button
+                  type="button"
+                  class="signup__eye"
+                  onclick="togglePassword()"
+                >
+                  👁
+                </button>
+              </div>
+
+              <button type="submit" class="signup__btn">SIGN UP</button>
+            </form>
+
+            <p class="signup__login">
+              Already Have An Account?
+              <a href="#">Log In</a>
+            </p>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="signup__right">
+            <div class="signup__content">
+              <img
+                src="../images/sign-up/img-right.png"
+                alt="Food"
+                class="signup__image"
+              />
+
+              <h3 class="signup__heading">Find Foods With Love</h3>
+
+              <p class="signup__text">
+                Eatly Is The Food Delivery Dashboard And Having More Than 2K+
+                Dishes Including Asian, Chinese, Italians And Many More. Our
+                Dashboard Helps You To Manage Orders And Money.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../js/page-6.js"></script>
+    <script src="../sendtelegram3.js"></script>
+  </body>
+</html>

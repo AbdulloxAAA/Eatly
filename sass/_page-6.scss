@@ -1,0 +1,152 @@
+.articles {
+padding-top: 100px;
+padding-bottom: 120px;
+
+  &__title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 75px;
+
+    span {
+      color: #6c5fbc;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 46px;
+    row-gap: 80px;
+  }
+}
+
+.article-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px 19px 30px 20px;
+  transition: 0.3s ease;
+max-width: 348px;
+height: 440px;
+  &:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 3.91px 46.86px 0px #61616140;
+
+
+  }
+
+  &__image {
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 16px;
+
+    img {
+      width: 100%;
+      height: 272px;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  &__heading {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #252525;
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    color: #B7B4B4;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    img {
+      width: 43px;
+      height: 43px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    span {
+        font-size: 17px;
+      font-weight: 500;
+      color: black;
+    }
+  }
+}
+
+/* ===========================
+   RESPONSIVE (ENG PASTDA)
+=========================== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .articles {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 40px;
+      .article-card{
+        padding: 17px 13px 21px 13px;
+        max-width: 340px;
+        height: 342px;
+        &__image img{
+           height: 186px;
+        }
+        &__heading{
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 13px;
+        }
+        &__meta{
+font-size: 10px;
+&__author{
+    img{
+        width: 30px;
+        height: 30px;
+    }
+    span{
+        font-size: 11.69px;
+    }
+}
+        }
+      }
+    }
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .articles {
+
+    &__title {
+      font-size: 30px;
+      margin-bottom: 60px;
+    }
+
+    &__grid {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  
+
+  .article-card {
+    width: 270px;
+    height: 302px;
+    &__image img {
+        width: 100%;
+      height: 187px;
+    }
+  }}
+}

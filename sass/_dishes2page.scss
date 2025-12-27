@@ -1,0 +1,252 @@
+$darker: #2b2b3c;
+$gray: #8e8ea0;
+$primary: #6c5dd3;
+
+.menu-list {
+  padding-top: 100px;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 75px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+    h2 {
+      font-size: 35px;
+      font-weight: 600;
+      color: $darker;
+
+      span {
+        color: $primary;
+      }
+    }
+  }
+
+  &__items {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 65px;
+  }
+
+  &__bottom {
+    .btn-view-all {
+      color: $gray;
+      text-decoration: none;
+    }
+  }
+}
+
+/* CARD */
+.menu-list__item {
+  max-width: 220px;
+  background: #fff;
+  border-radius: 34px;
+  padding: 16px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  position: relative;
+
+  &:hover {
+    box-shadow: 6.85px 82.18px 41.09px 0px #E5E5E5B2;
+    transform: translateY(-12px);
+  }
+
+  .item-bookmark {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    cursor: pointer;
+
+    img {
+      width: 20px;
+    }
+  }
+
+  .item-image {
+    width: 187px;
+    height: 184px;
+    border-radius: 50%;
+    margin-bottom: 14px;
+  }
+
+  .item-badge {
+    display: inline-block;
+    padding: 3px 7px;
+    border-radius: 4.83px;
+    font-size: 12px;
+
+    &.healthy {
+      background: #fff2d9;
+      color: #ff9f1c;
+    }
+
+    &.trending {
+      background: #ffe4e4;
+      color: #ff4d4f;
+    }
+
+    &.supreme {
+      background: #D6EEE0;
+      color: #309D5B;
+    }
+  }
+
+  .item-rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  h3 {
+    font-size: 16px;
+    margin: 6px 0;
+    color: $darker;
+  }
+
+  .item-info {
+    font-family: Manrope;
+    display: flex;
+    align-items: center;
+    gap: 5.76px;
+    color: $gray;
+    font-size: 14px;
+  }
+
+  .item-footer {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .item-price {
+      font-size: 25px;
+      font-weight: 700;
+      color: $darker;
+    }
+
+    .item-add-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      border: none;
+      background: $darker;
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu-list {
+    &__items {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .menu-list__item {
+    max-width: 200px;
+  }
+}
+
+/* 768px dan past (tablet) */
+@media (max-width: 768px) {
+  .menu-list {
+    padding-top: 70px;
+
+    &__title {
+      margin-bottom: 45px;
+
+      h2 {
+        font-size: 32px;
+      }
+    }
+
+    &__items {
+      gap: 20px;
+    }
+  }
+
+  .menu-list__item {
+    max-width: 180px;
+    padding: 14px;
+
+    .item-image {
+      width: 150px;
+      height: 150px;
+    }
+
+    h3 {
+      font-size: 15px;
+    }
+
+    .item-footer {
+      .item-price {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+/* 📱 400px va undan past — 1 qatorda 2 ta card */
+@media (max-width: 450px) {
+  .menu-list {
+    padding-top: 50px;
+
+    &__title {
+      h2 {
+        font-size: 26px;
+      }
+    }
+
+    &__items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+  }
+
+  .menu-list__item {
+    max-width: 100%;
+    padding: 12px;
+    border-radius: 22px;
+
+    .item-image {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 10px;
+      display: block;
+    }
+
+    h3 {
+      font-size: 14px;
+    }
+
+    .item-info {
+      font-size: 12px;
+    }
+
+    .item-rating {
+      justify-content: center;
+    }
+
+    .item-footer {
+      margin-top: 10px;
+
+      .item-price {
+        font-size: 18px;
+      }
+
+      .item-add-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 18px;
+      }
+    }
+  }
+}

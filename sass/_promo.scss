@@ -1,0 +1,142 @@
+$primary: #5C4EAE;
+$white: #ffffff;
+$radius: 30px;
+
+.promo {
+  padding: 40px 16px;
+padding-bottom: 250px;
+  &__container {
+    background: $primary;
+background-image: url(../images/testimonial-footer/foter-top.png);
+    border-radius: $radius;
+ padding-top: 37px;
+   padding-left: 66px;
+   height: 280px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+  }
+
+  &__content {
+    max-width: 439px;
+    color: $white;
+  }
+
+  &__title {
+    font-size: 70px;
+    font-weight: 800;
+    font-style: ExtraBold;
+    color: #DEDCEF;
+    margin-bottom: 29px;
+  }
+
+  /* ===== FORM ===== */
+  .form {
+    width: 100%;
+box-shadow: 0px 7.25px 45.33px 0px #0000001A;
+
+    form {
+      display: flex;
+      width: 100%;
+        background: #DEDCEF;
+        border-radius: 14px;
+    .email {
+      flex: 1;
+      padding: 21px 42px 21px 21px;
+      border-top-left-radius:14px ;
+      border-bottom-left-radius:14px ;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      font-size: 16px;
+    color: #878787;
+    }
+
+    .submit {
+        padding: 15px 25px 16px 25px;
+      margin-top: 7px;
+      margin-right: 6px;
+      margin-bottom: 7px;
+      border-radius: 11px;
+      border: none;
+      background: #6C5FBC;
+      color: $white;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      &:hover {
+        background: lighten($primary, 20%);
+      }
+    }
+  }}
+
+  /* ===== IMAGE ===== */
+  &__image {
+    max-width: 274px;
+    width: 100%;
+   border-radius: 50%;
+    height: 276px;
+top: 57px;
+right: 72px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+position: relative;
+z-index: 20;
+
+  }
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 900px) {
+  .promo {
+    &__container {
+      flex-direction: column;
+      text-align: center;
+      padding-left: 20px;
+    }
+   &__image {
+      width: 140px;
+      height: 140px;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      right: 0;
+      top: 27px;
+    }
+    .form {
+      width: 100%;
+form{width: 100%;
+    input[type="email"] {
+    padding: 16px 22px 15px 14px;
+    font-size: 12px;
+      }
+      input[type="submit"] {
+        width: 100%;
+        font-size: 11px;
+           padding: 10px 16px 10px 16px;
+      }
+}}
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 480px) {
+  .promo {
+    &__title {
+      font-size: 46px;
+    }
+
+    &__image {
+      width: 170px;
+      height: 170px;
+      
+    }
+  }
+}
+
+
+
+
+/////////////////////////////////////////////////

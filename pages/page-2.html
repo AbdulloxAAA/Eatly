@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Eatly - Figma</title>
+    <link rel="icon" href="./images/header/Logo eatly.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../sass/main.scss" />
+    <link rel="stylesheet" href="../sass/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="/"> <img src="../images/header/Logo.png" alt="" /></a>
+          </div>
+           <nav class="nav">
+            <ul class="nav-list">
+                           <div class="dropdown">
+  <a href="#" class="dropdown-btn">Menu ▾</a>
+  <ul class="dropdown-menu">
+    <li><a href="../pages/page-2.html">Menu 1</a></li>
+    <li><a href="../pages/page-3.html">Menu 2</a></li>
+    <li><a href="../pages/page-4.html">Menu 3</a></li>
+  </ul>
+</div>
+              <li><a href="../pages/pagr-5.html">Pricing</a></li>
+              <li><a href="../pages/page-6.html">Blog 1</a></li>
+              <li><a href="../pages/page-7.html">Blog 2</a></li>
+              <li><a href="../pages/contact.html">Contact</a></li>
+
+            </ul>
+          </nav>
+        </div>
+
+        <div class="actions">
+          <a href="#" class="login">Login</a>
+          <a href="../pages/sign-up.html" class="btn">Sign Up</a>
+        </div>
+
+        <button class="burger-btn">☰</button>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu d-none">
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <a href="#" class="login">Login</a>
+          <a href="#" class="btn">Sign Up</a>
+        </div>
+      </div>
+    </header>
+    <div class="container hr"></div>
+    <main>
+      <section class="nebula-root container">
+        <!-- LEFT SIDE -->
+        <div class="gravity-left">
+          <div class="violet-orbit" id="violetOrbit">
+            <div class="text-matrix">
+              <h2 class="alpha-blast">50% OFF</h2>
+              <span class="beta-whisper">WEEKENDS</span>
+            </div>
+            <div class="plasma-core">
+              <img src="../images/product-2/salt3.png" alt="food" />
+            </div>
+          </div>
+
+          <div class="quantum-dots">
+            <span class="dotling active"></span>
+            <span class="dotling"></span>
+            <span class="dotling"></span>
+          </div>
+
+          <div class="echo-field">
+            <img src="../images/page2-home/Search.png" alt="" />
+            <input type="text" placeholder="Search" />
+          </div>
+
+          <div class="flux-switch">
+            <button class="flux-node active">Food</button>
+            <button class="flux-node">Restaurant</button>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <aside class="gravity-right">
+          <!-- Category -->
+          <div class="filter-crystal">
+            <h4 class="crystal-title">Category</h4>
+
+            <div class="icon-grid">
+              <div class="icon-cell1 active">
+                <img src="../images/page2-home/Pizza.png" alt="" /><span
+                  >Pizza</span
+                >
+              </div>
+              <div class="icon-cell2">
+                <img src="../images/page2-home/Hotdog.png" alt="" /><span
+                  >Asian</span
+                >
+              </div>
+              <div class="icon-cell3">
+                <img src="../images/page2-home/Doughnut.png" alt="" /><span
+                  >Donut</span
+                >
+              </div>
+              <div class="icon-cell4">
+                <img src="../images/page2-home/Icecream.png" alt="" /><span
+                  >Ice</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Sort -->
+          <div class="filter-crystal">
+            <h4 class="crystal-title">Sort By</h4>
+            <div class="sort-list">
+              <div>
+                <button class="sort-pill">Recommended</button>
+                <button class="sort-pill active">Fast Delivery</button>
+              </div>
+              <button class="sort-pill">Most Popular</button>
+            </div>
+          </div>
+
+          <!-- Price -->
+          <div class="filter-crystal">
+            <h4 class="crystal-title">Price</h4>
+            <input
+              type="range"
+              min="10"
+              max="100"
+              value="30"
+              class="price-beam"
+            />
+            <button class="apply-core">Apply</button>
+          </div>
+        </aside>
+      </section>
+
+      <section class="top-restaurants">
+        <div class="container">
+          <div class="header_restourents">
+            <h2 class="section-title">
+              Our Top <span class="highlight">Restaurants</span>
+            </h2>
+            <div class="view-all-link">
+              <a href="#">View All ➜</a>
+            </div>
+          </div>
+
+          <div class="restaurant-cards"></div>
+        </div>
+      </section>
+      <div class="container hr"></div>
+      <section class="menu-list">
+        <div class="wrapper container">
+          <div class="menu-list__title">
+            <h2>Our Top <span class="highlighted-text">Dishes</span></h2>
+            <div class="menu-list__bottom">
+              <a href="#" class="btn-view-all">View All ➜</a>
+            </div>
+          </div>
+
+          <div class="menu-list__items" id="menuItems"></div>
+        </div>
+      </section>
+      <section class="faq ">
+      <div class="container">
+         <div class="faq__top">
+         <h2 class="faq__title">Frequently Asked <span>Questions</span></h2>
+
+       </div>
+        <div class="faq__list">
+          <div class="faq__item active">
+            <button class="faq__question">
+              How long does delivery take?
+              <span class="icon">−</span>
+            </button>
+            <div class="faq__answer">
+              <p>
+                You Can Get Information By Contacting Our Support Team Have 24/7
+                Service. What’s The Difference Between Free And Paid Plan ?
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              How Does It Work?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>
+                It works in a few simple steps: choose your option, submit the
+                required details, and confirm. The system processes your request
+                automatically and delivers the result instantly.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              How does your food delivery service work?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>
+                Choose your favorite meals, place an order through the app or
+                website, and track it live. Our courier picks it up and delivers
+                it straight to your door.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              What payment options do you accept?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>
+                We accept cash, credit/debit cards, and popular online payment
+                methods. All payments are secure and easy to complete.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question">
+              Do you offer discounts or promotions?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>
+                Yes, we regularly offer special deals and promo codes. Check the
+                app or website to stay updated on current offers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <img
+              src="../images/header/Logo.png"
+              alt="Eatly"
+              class="footer__logo"
+            />
+            <div class="footer__socials">
+              <a href="#"
+                ><img class="a1" src="../images/footer/instagram.png" alt=""
+              /></a>
+              <a href="#"
+                ><img class="a2" src="../images/footer/Path 7.png" alt=""
+              /></a>
+              <a href="#"
+                ><img class="a3" src="../images/footer/Path 13.png" alt=""
+              /></a>
+              <a href="#"
+                ><img class="a4" src="../images/footer/Path 6.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <ul class="footer__nav">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__divider"></div>
+
+        <div class="footer__bottom">
+          <p class="footer__copy">© 2023 EATLY All Rights Reserved.</p>
+
+          <div class="footer__socials">
+            <a href="#"
+              ><img class="a1" src="../images/footer/instagram.png" alt=""
+            /></a>
+            <a href="#"
+              ><img class="a2" src="../images/footer/Path 7.png" alt=""
+            /></a>
+            <a href="#"
+              ><img class="a3" src="../images/footer/Path 13.png" alt=""
+            /></a>
+            <a href="#"
+              ><img class="a4" src="../images/footer/Path 6.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/page2data.js"></script>
+    <script src="../js/home.js"></script>
+  </body>
+</html>
