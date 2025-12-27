@@ -3,29 +3,44 @@ function randomPrice(min, max) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Basic va Premium uchun random narxlar
-  const basic = randomPrice(0, 3);      // $0 - $3
-  const premium = randomPrice(5, 25);   // $5 - $25
+  // ===== DAILY RANDOM PRICE =====
+  const today = new Date().toDateString();
+  const savedDay = localStorage.getItem("priceDay");
 
-  document.getElementById("basicPrice").textContent = basic;
-  document.getElementById("premiumPrice").textContent = premium;
+  if (savedDay !== today) {
+    localStorage.setItem("priceDay", today);
+    localStorage.setItem("basic", randomPrice(0, 3));
+    localStorage.setItem("premium", randomPrice(5, 25));
+  }
 
-  console.log("Prices updated:", basic, premium);
+  // ===== SET PRICE TO DOM (MUHIM QISM) =====
+  const basicPriceEl = document.getElementById("basicPrice");
+  const premiumPriceEl = document.getElementById("premiumPrice");
+
+  if (basicPriceEl && premiumPriceEl) {
+    basicPriceEl.textContent = localStorage.getItem("basic");
+    premiumPriceEl.textContent = localStorage.getItem("premium");
+  }
+
+  // ===== FEATURES TOGGLE =====
+  document.querySelectorAll(".features-toggle").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const features = btn.nextElementSibling;
+
+      features.style.display =
+        features.style.display === "block" ? "none" : "block";
+    });
+  });
+
+  // ===== SHOW AFTER 700PX SCROLL =====
+  const pricingSection = document.getElementById("pricing");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 700) {
+      pricingSection.classList.add("show");
+    }
+  });
 });
-const now = new Date().toDateString();
-const savedDay = localStorage.getItem("priceDay");
-
-if (savedDay !== now) {
-  localStorage.setItem("priceDay", now);
-  localStorage.setItem("basic", randomPrice(0,3));
-  localStorage.setItem("premium", randomPrice(5,25));
-}
-
-document.getElementById("basicPrice").textContent =
-  localStorage.getItem("basic");
-
-document.getElementById("premiumPrice").textContent =
-  localStorage.getItem("premium");
   ////////////////////////////////////////
   /////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////
