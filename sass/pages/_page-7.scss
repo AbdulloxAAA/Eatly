@@ -52,7 +52,7 @@ font-weight: 500;
  
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .article-hero {
     padding: 60px 0;
@@ -68,7 +68,7 @@ font-weight: 500;
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /// /////////////////////////////////////////
-/// ///////////
+/// 
 .guide-section {
   padding: 60px 0;
   background: #fff;
@@ -241,7 +241,7 @@ div{
   }
 }
 
-/* ====== Small Tablet & Mobile (<= 1000px) ====== */
+
 @media (max-width: 1000px) {
   .guide-section {
     .content {
@@ -249,7 +249,7 @@ div{
       row-gap: 40px;
     }
 
-    /* ❌ O‘ng tarafdagi cardlar yo‘qoladi */
+    
     .articles {
       display: none;
     }
@@ -272,7 +272,7 @@ div{
   }
 }
 
-/* ====== Mobile (<= 600px) ====== */
+
 @media (max-width: 600px) {
   .guide-section {
     padding: 30px 0;

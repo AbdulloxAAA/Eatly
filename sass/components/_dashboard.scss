@@ -15,7 +15,7 @@
       color: #6c5fbc;
     }
   }
-} /* ORDERS */
+} 
 .orders {
   display: flex;
   flex-direction: column;
@@ -67,7 +67,7 @@
     color: #aaa;
     display: inline-block;
   }
-} /* PURCHASES */
+} 
 .purchases {
   background: #fff;
   padding: 28px;
@@ -152,9 +152,7 @@ justify-content: center;
     }
   }
 }
-/* =======================
-   LAPTOP / SMALL DESKTOP
-======================= */
+
 @media (max-width: 1200px) {
   .dashboard {
     padding: 70px 0;
@@ -177,9 +175,7 @@ justify-content: center;
   }
 }
 
-/* =======================
-   TABLET
-======================= */
+
 @media (max-width: 992px) {
   .dashboard {
     &__container {
@@ -233,9 +229,7 @@ justify-content: center;
   }
 }
 
-/* =======================
-   MOBILE
-======================= */
+
 @media (max-width: 576px) {
   .dashboard {
     padding: 60px 0;

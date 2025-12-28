@@ -7,7 +7,7 @@ dotlings.forEach(dot => {
     dotlings.forEach(d => d.classList.remove('active'));
     dot.classList.add('active');
 
-    // re-trigger animation
+ 
     violetOrbit.style.animation = 'none';
     violetOrbit.offsetHeight;
     violetOrbit.style.animation = 'cosmicPop 0.5s ease';

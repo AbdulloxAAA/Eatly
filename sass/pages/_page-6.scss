@@ -87,11 +87,10 @@ height: 440px;
   }
 }
 
-/* ===========================
-   RESPONSIVE (ENG PASTDA)
-=========================== */
 
-/* Tablet */
+
+
+
 @media (max-width: 992px) {
   .articles {
     &__grid {
@@ -126,7 +125,7 @@ font-size: 10px;
   }
 }
 
-/* Mobile */
+
 @media (max-width: 576px) {
   .articles {
 

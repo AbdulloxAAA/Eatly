@@ -14,7 +14,7 @@ padding-bottom: 120px;
   color:#6C5FBC;
 }
 
-/* ===== CARDS ===== */
+
 .restaurants-row{
   display:flex;
   gap:30px;
@@ -88,7 +88,7 @@ margin-top: 7px;
   }
 }
 
-/* ===== BOOKMARK ===== */
+
 .bookmark{
   cursor:pointer;
   transition:.3s;
@@ -100,7 +100,7 @@ margin-top: 7px;
   object-fit:contain;
 }
 
-/* ===== VIEW ALL ===== */
+
 .view-all{
   text-align:right;
   margin-top:65px;
@@ -113,7 +113,7 @@ margin-top: 7px;
   font-weight: 500;
 }
 
-/* ===== RESPONSIVE ===== */
+
 @media (max-width: 1200px) {
   .restaurants-row {
     flex-wrap: wrap;
@@ -125,7 +125,7 @@ margin-top: 7px;
   }
 }
 
-/* Tablets */
+
 @media (max-width: 992px) {
   .section-title {
     font-size: 38px;
@@ -145,7 +145,7 @@ margin-top: 7px;
   }
 }
 
-/* Small tablets */
+
 @media (max-width: 768px) {
   .restaurants {
     padding-top: 70px;
@@ -176,7 +176,7 @@ margin-top: 7px;
   }
 }
 
-/* Mobile */
+
 @media (max-width: 480px) {
   .section-title {
     font-size: 26px;

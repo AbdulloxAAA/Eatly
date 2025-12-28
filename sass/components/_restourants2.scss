@@ -18,7 +18,7 @@
   }
 }
 
-/* ===== CARDS ===== */
+
 .restaurant-cards {
   display: flex;
   gap: 30px;
@@ -96,7 +96,7 @@
   }
 }
 
-/* ===== BOOKMARK ===== */
+
 .bookmark {
   cursor: pointer;
   transition: 0.3s;
@@ -108,7 +108,7 @@
   }
 }
 
-/* ===== VIEW ALL ===== */
+
 .view-all-link {
   a {
     text-decoration: none;
@@ -118,7 +118,7 @@
   }
 }
 
-/* ===== RESPONSIVE ===== */
+
 @media (max-width: 1200px) {
   .restaurant-cards {
     flex-wrap: wrap;
@@ -130,7 +130,7 @@
   }
 }
 
-/* Tablets */
+
 @media (max-width: 992px) {
   .section-title {
     font-size: 38px;
@@ -150,7 +150,7 @@
   }
 }
 
-/* Small tablets */
+
 @media (max-width: 768px) {
   .top-restaurants {
     padding-top: 70px;
@@ -181,7 +181,7 @@
   }
 }
 
-/* Mobile */
+
 @media (max-width: 480px) {
   .section-title {
     font-size: 20px;
@@ -215,7 +215,7 @@
   }
 }
 
-/////////////////////////////////////////////////////////////////////////////////
+
 /// /////////////////////////////////////////////////////////////////////////////
 /// //////////////////////////////////////////////////////////////////////////
 .faq {

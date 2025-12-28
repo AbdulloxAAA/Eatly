@@ -93,13 +93,13 @@ function createPopularCard(item) {
   const addBtn = card.querySelector(".popular-add");
   const favBtn = card.querySelector(".popular-favorite img");
 
-  /* ADD BUTTON */
+
   addBtn.onclick = () => {
     quantity++;
     priceText.textContent = `$${(startPrice * quantity).toFixed(2)}`;
   };
 
-  /* FAVORITE */
+
   favBtn.onclick = () => {
     favBtn.src = favBtn.src.includes("Heart")
       ? item.favActiveIcon
@@ -115,7 +115,7 @@ popularItems.forEach(item => {
 
 ////////////////////////////////////////////////////////////////////
 ////////////////Chiken SECTION//////////////////////////////////////
-// Menu ma'lumotlari
+
 const menuItems = [
   {
     img: "../images/product-2/salt1.png",
@@ -143,12 +143,12 @@ const menuItems = [
 
 const menuGrid = document.getElementById("menuGrid");
 
-// Menu kartasini yaratish funksiyasi
+
 function renderMenuCard(data) {
   const card = document.createElement("div");
   card.className = "menu-item";
 
-  // Har bir kartadagi boshlang'ich narx
+
   let currentPrice = data.cost;
 
   card.innerHTML = `
@@ -175,7 +175,7 @@ function renderMenuCard(data) {
     </div>
   `;
 
-  // ❤️ Heart toggle
+  
   const heartImg = card.querySelector(".fav-btn img");
   heartImg.onclick = () => {
     heartImg.src = heartImg.src.includes("Heart")
@@ -183,23 +183,23 @@ function renderMenuCard(data) {
       : data.heart;
   };
 
-  // ➕ Add price shu kartada
+
   const addBtn = card.querySelector(".item-add");
   const priceEl = card.querySelector(".item-price");
 
   addBtn.onclick = () => {
-    currentPrice += data.cost;  // har bosishda original narx qo'shiladi
+    currentPrice += data.cost;  
     priceEl.textContent = `$${currentPrice.toFixed(2)}`;
   };
 
   return card;
 }
 
-// Menu itemlarini yaratish va ekranga qo‘yish
+
 menuItems.forEach(item => {
   menuGrid.append(renderMenuCard(item));
 });
-////////////////////////////////////////////////////////////////////
+
 //////////////////////////////////////////////////////////////////////
 /////////////////////ACCORDION SECTION/////////////////////////////
 const accordionItems = document.querySelectorAll(".accordion__item");

@@ -36,7 +36,7 @@ justify-content: space-between;
   }
 }
 
-/* CARD */
+
 .menu-list__item {
   max-width: 220px;
   background: #fff;
@@ -154,7 +154,7 @@ justify-content: space-between;
   }
 }
 
-/* 768px dan past (tablet) */
+
 @media (max-width: 768px) {
   .menu-list {
     padding-top: 70px;
@@ -193,7 +193,7 @@ justify-content: space-between;
   }
 }
 
-/* 📱 400px va undan past — 1 qatorda 2 ta card */
+
 @media (max-width: 450px) {
   .menu-list {
     padding-top: 50px;

@@ -22,7 +22,7 @@ padding-bottom: 80px;
   font-weight: 400;
 }
 
-/* LEFT */
+
 .heroleft {
   max-width: 520px;
   flex: 1 1 100%;
@@ -64,11 +64,11 @@ padding-bottom: 80px;
     color: #6b7280;
     line-height: 1.6;
     margin-bottom: 53px;
-    width: 499px; // responsive
+    width: 499px; 
   }
 }
 
-/* ACTION BUTTONS */
+
 .hero-actions {
   display: flex;
   gap: 16px;
@@ -106,7 +106,7 @@ padding-bottom: 80px;
   }
 }
 
-/* RATING */
+
 .heroleft-rating {
   display: flex;
   align-items: center;
@@ -136,10 +136,10 @@ padding-bottom: 80px;
   }
 }
 
-/* RIGHT IMAGE */
+
 .hero-right {  
   width: 100%;
-  max-width: 600px; // desktop va tabletlarda cheklash
+  max-width: 600px;
   flex: 1 1 100%;
   img {
     width: 100%;
@@ -147,9 +147,12 @@ padding-bottom: 80px;
   }
 }
 
-/* RESPONSIVE MEDIA QUERIES */
 
-/* Laptop & tablet */
+
+
+
+
+
 @media (max-width: 900px) {
   .hero-wrapper {
     flex-direction: column;
@@ -181,7 +184,7 @@ padding-bottom: 80px;
 }
 }
 
-/* Tablet portret & mobil */
+
 @media (max-width: 768px) {
 .heroleft{
     h1 {
@@ -202,7 +205,7 @@ padding-bottom: 80px;
 }
 }
 
-/* Mobil kichik ekranlar */
+
 @media (max-width: 480px) {
   .hero{
     margin-top: 100px;

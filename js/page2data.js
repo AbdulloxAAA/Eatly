@@ -34,7 +34,7 @@ const restaurants = [
   },
 ];
 
-// FUNCTION TO CREATE RESTAURANT CARD
+
 function createRestaurantCard(restaurant) {
   const card = document.createElement("div");
   card.className = "restaurant-card";
@@ -59,7 +59,7 @@ function createRestaurantCard(restaurant) {
   const time = document.createElement("span");
   time.textContent = restaurant.time;
 
-  // RATING SECTION
+
   const rating = document.createElement("span");
   rating.className = "rating";
 
@@ -74,7 +74,7 @@ function createRestaurantCard(restaurant) {
 
   rating.append(star, ratingText);
 
-  // BOOKMARK SECTION
+
   const bookmark = document.createElement("div");
   bookmark.className = "bookmark";
 
@@ -98,12 +98,12 @@ function createRestaurantCard(restaurant) {
   return card;
 }
 
-// APPEND CARDS TO CONTAINER
+
 const cardsContainer = document.querySelector(".restaurant-cards");
 restaurants.forEach(restaurant => {
   cardsContainer.append(createRestaurantCard(restaurant));
 });
-////////////////////////////////////////////////////////////////
+
 ////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////
 const dishes = [
@@ -167,7 +167,7 @@ const dishes = [
 const row2 = document.getElementById("menuItems");
 
 function getDishCard(el) {
-  let count = 1; // har bir card uchun alohida count
+  let count = 1; 
   const basePrice = el.price;
 
   const card = document.createElement("article");
@@ -200,14 +200,14 @@ function getDishCard(el) {
   const priceEl = card.querySelector(".item-price");
   const plusBtn = card.querySelector(".item-add-btn");
 
-  /* PLUS */
+ 
   plusBtn.onclick = () => {
     count++;
     const newPrice = basePrice * count;
     priceEl.innerText = `$${newPrice.toFixed(2)}`;
   };
 
-  /* BOOKMARK */
+
   const bookmarkImg = card.querySelector(".item-bookmark img");
   bookmarkImg.onclick = () => {
     bookmarkImg.src =
@@ -220,7 +220,7 @@ function getDishCard(el) {
 }
 
 dishes.forEach(el => row2.append(getDishCard(el)));
-/////////////////////////////////////////////////////////
+
 /////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////
 const faqItems = document.querySelectorAll(".faq__item");

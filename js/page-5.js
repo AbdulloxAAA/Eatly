@@ -3,7 +3,7 @@ function randomPrice(min, max) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // ===== DAILY RANDOM PRICE =====
+
   const today = new Date().toDateString();
   const savedDay = localStorage.getItem("priceDay");
 
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("premium", randomPrice(5, 25));
   }
 
-  // ===== SET PRICE TO DOM (MUHIM QISM) =====
+ 
   const basicPriceEl = document.getElementById("basicPrice");
   const premiumPriceEl = document.getElementById("premiumPrice");
 
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     premiumPriceEl.textContent = localStorage.getItem("premium");
   }
 
-  // ===== FEATURES TOGGLE =====
+ 
   document.querySelectorAll(".features-toggle").forEach((btn) => {
     btn.addEventListener("click", () => {
       const features = btn.nextElementSibling;
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // ===== SHOW AFTER 700PX SCROLL =====
+
   const pricingSection = document.getElementById("pricing");
 
   window.addEventListener("scroll", () => {
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-  ////////////////////////////////////////
+
   /////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////
   const testimonials = [
@@ -73,13 +73,13 @@ const dotsContainer = document.getElementById("carouselDots");
 
 let activeIndex = 0;
 
-/* Render */
+
 function renderTestimonials() {
   track.innerHTML = "";
   dotsContainer.innerHTML = "";
 
   testimonials.forEach((item, index) => {
-    /* CARD */
+  
     const card = document.createElement("div");
     card.className = "testimonial__card";
     if (index === 0) card.classList.add("active");
@@ -101,7 +101,7 @@ function renderTestimonials() {
     card.addEventListener("click", () => setActive(index));
     track.appendChild(card);
 
-    /* DOT */
+
     const dot = document.createElement("span");
     dot.className = "testimonial__dot";
     if (index === 0) dot.classList.add("active");
@@ -129,6 +129,6 @@ function setActive(index) {
   track.style.transform = `translateX(-${index * cardWidth}px)`;
 }
 
-/* INIT */
+
 renderTestimonials();
 setActive(0);

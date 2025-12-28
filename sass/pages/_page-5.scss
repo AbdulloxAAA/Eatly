@@ -52,7 +52,7 @@ $bg: #f6f6fb;
   }
 }
 
-/* DEKORATIV CHIZIQLAR */
+
 .decor {
   position: absolute;
   width: 60px;
@@ -72,7 +72,7 @@ $bg: #f6f6fb;
     transform: rotate(-20deg);
   }
 }
-/* RESPONSIVE QISM */
+
 @media (max-width: 1200px) {
   .pricing-section {
     width: 90%;
@@ -147,7 +147,7 @@ $bg: #f6f6fb;
     height: 250px;
   }
 }
-////////////////////////////////////////////////////////////////////////////////////////////
+
 /// //////////////////////////////////////////////////////////////////////////////////////
 /// ////////SECTION_____ONLAYN////////////////////////////////////////////////////////////\
 $main: #6C5FBC;
@@ -428,7 +428,7 @@ justify-content: start;
   }
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
   .onlayn-pricing {
     display: flex;

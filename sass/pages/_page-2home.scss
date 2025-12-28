@@ -3,7 +3,7 @@
   transform: scale(1.1);
 }
 
-/* promo */
+
 .violet-orbit {
   background: #5C4EAE;
   background-image: url(../images/page2-home/Mask\ Group.png);
@@ -42,7 +42,7 @@
   top: 30px;
 }
 
-/* dots */
+
 .quantum-dots {
   display: flex;
   justify-content: center;
@@ -80,7 +80,7 @@ border-radius: 19px;
     height: 22px;
   }
 }
-/* search */
+
 .echo-field input {
   padding-left: 28px;
   width: 100%;
@@ -95,7 +95,7 @@ outline: none;
 }
 
 
-/* toggle */
+
 .flux-switch {
   display: flex;
   background: #e2e2e2;
@@ -121,7 +121,7 @@ outline: none;
 }
 
 
-/* animation */
+
 @keyframes cosmicPop {
   from {
     opacity: 0;
@@ -140,7 +140,7 @@ outline: none;
   transform: scale(1.1);
 }
 
-/* left & right */
+
 .gravity-left {
   flex: 1;
 }
@@ -157,7 +157,7 @@ outline: none;
 }
 }
 
-/* filter blocks */
+
 .filter-crystal {
   margin-bottom: 26px;
 }
@@ -169,7 +169,7 @@ outline: none;
   margin-bottom: 25px;
 }
 
-/* category icons */
+
 .icon-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -266,7 +266,7 @@ transition: transform 0.5s;
   }
 }
 
-/* sort */
+
 .sort-list {
 
   div{
@@ -289,7 +289,7 @@ font-weight: 500;
 .active{
   color: #6C5FBC;
 }
-/* price */
+
 .price-beam {
   width: 100%;
  margin-bottom: 38px;
@@ -384,7 +384,7 @@ font-weight: 500;
   }
 }
 
-/* 768px va kichikroq ekranlar uchun */
+
 @media (max-width: 768px) {
   .nebula-root {
     gap: 20px;
@@ -453,7 +453,7 @@ font-weight: 500;
   }
 }
 
-/* 400px va kichik ekranlar uchun */
+
 @media (max-width: 400px) {
   .nebula-root {
     width: 100%;

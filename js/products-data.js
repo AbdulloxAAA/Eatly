@@ -34,7 +34,7 @@ const restaurants = [
   },
 ];
 
-// FUNCTION
+
 function getRestaurantCard(el){
   let card = document.createElement("div");
   card.className="restaurant-card";
@@ -58,7 +58,7 @@ function getRestaurantCard(el){
   let time = document.createElement("span");
   time.innerHTML=el.time;
 
-  // STAR IMAGE
+
   let rating = document.createElement("span");
   rating.className="rating";
 
@@ -73,7 +73,7 @@ function getRestaurantCard(el){
 
   rating.append(star,ratingText);
 
-  // BOOKMARK IMAGE
+  
   let bookmark = document.createElement("div");
   bookmark.className="bookmark";
 
@@ -96,14 +96,13 @@ function getRestaurantCard(el){
   return card;
 }
 
-// APPEND
+
 let row = document.querySelector(".restaurants-row");
 restaurants.map(el=>{
   row.append(getRestaurantCard(el));
 });
 ///////////////menu//////////////////////////////////////////////////////////
-// ///////////////////////////////////////////////////////////////////////////
-// /////////////////////////////////////////// ///////////////////////////////
+
 // ////////////////////////////////////////////////////////////////////////////
 const dishes = [
   {
@@ -166,7 +165,7 @@ const dishes = [
 const row2 = document.getElementById("dishesRow");
 
 function getDishCard(el) {
-  let count = 1; // har bir card uchun alohida count
+  let count = 1; 
   const basePrice = el.price;
 
   const card = document.createElement("div");
@@ -198,14 +197,14 @@ function getDishCard(el) {
   const priceEl = card.querySelector(".price");
   const plusBtn = card.querySelector(".plus");
 
-  /* PLUS */
+  
   plusBtn.onclick = () => {
     count++;
     const newPrice = basePrice * count;
     priceEl.innerText = `$${newPrice.toFixed(2)}`;
   };
 
-  /* BOOKMARK */
+ 
   const bookmarkImg = card.querySelector(".bookmark img");
   bookmarkImg.onclick = () => {
     bookmarkImg.src =
@@ -218,7 +217,7 @@ function getDishCard(el) {
 }
 
 dishes.forEach(el => row2.append(getDishCard(el)));
-/////////////////////////////////////////////////////////////////////////////////////////
+
 ////////////////////TESTIMONIAL///////////////////////////////////////////////////////////
 /////////////////////SECTION///////////////////////////////////////////////////////////
 const testimonials = [
@@ -250,7 +249,7 @@ const dotsContainer = document.getElementById("carouselDots");
 
 let activeIndex = 0;
 
-/* Render */
+
 function renderTestimonials() {
   track.innerHTML = "";
   dotsContainer.innerHTML = "";
@@ -306,6 +305,6 @@ function setActive(index) {
   track.style.transform = `translateX(-${index * cardWidth}px)`;
 }
 
-/* INIT */
+
 renderTestimonials();
 setActive(0);

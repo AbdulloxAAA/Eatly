@@ -1,4 +1,4 @@
-/* PHONE SCREEN */
+
 .screen {
   border-radius: 28px;
   overflow: hidden;
@@ -8,7 +8,7 @@
   object-fit: cover;
 }
 
-/* MAP IMAGE */
+
 .map-img {
   position: absolute;
   width: 90%;
@@ -23,7 +23,7 @@
 z-index: -2;
 opacity: 00.1;
 }
-/* CARD */
+
 .carde {
   margin: 0 auto 100px auto;
   max-width: 451px;
@@ -41,7 +41,7 @@ opacity: 00.1;
   }
 }
 
-/* CARD TOP */
+
 .card-top {
   padding: 20px 20px 27px 20px;
   display: flex;
@@ -69,7 +69,7 @@ opacity: 00.1;
   }
 }
 
-/* CONTENT */
+
 .card-content {
   padding: 31px 20px 30px 20px;
 }

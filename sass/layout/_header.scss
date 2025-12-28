@@ -135,7 +135,7 @@ a {
   cursor: pointer;
 }
 
-/* MOBILE */
+
 .mobile-menu {
   background: #fff;
   padding: 20px;
@@ -176,7 +176,7 @@ justify-content: center;
 
     ul{ 
       text-align: center;
-      flex-wrap: wrap ; // vertikal scroll, agar sig‘sa
+      flex-wrap: wrap ;
       li{
         flex: 1 1 80px;
         margin-bottom: 20px;

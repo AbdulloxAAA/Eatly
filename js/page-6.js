@@ -46,11 +46,11 @@ const articlesData = [
 const grid = document.getElementById("articlesGrid");
 
 articlesData.map(article => {
-  // Card
+  
   const card = document.createElement("article");
   card.className = "article-card";
 
-  // Image wrapper
+  
   const imageBox = document.createElement("div");
   imageBox.className = "article-card__image";
 
@@ -60,16 +60,16 @@ articlesData.map(article => {
 
   imageBox.appendChild(img);
 
-  // Title
+
   const title = document.createElement("h3");
   title.className = "article-card__heading";
   title.textContent = article.title;
 
-  // Meta
+  
   const meta = document.createElement("div");
   meta.className = "article-card__meta";
 
-  // Author
+
   const authorBox = document.createElement("div");
   authorBox.className = "article-card__author";
 
@@ -82,13 +82,13 @@ articlesData.map(article => {
 
   authorBox.append(avatar, name);
 
-  // Date
+
   const date = document.createElement("time");
   date.textContent = article.date;
 
   meta.append(authorBox, date);
 
-  // Append all
+  
   card.append(imageBox, title, meta);
   grid.appendChild(card);
 });

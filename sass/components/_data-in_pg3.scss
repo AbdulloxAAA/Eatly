@@ -2,7 +2,7 @@ $darker: #323142;
 $gray: #8E97A6;
 $primary: #6C5FBC;
 
-/* SECTION */
+
 .popular-section {
   padding-top: 100px;
 padding-bottom: 127px;
@@ -30,7 +30,7 @@ padding-bottom: 127px;
   }
 }
 
-/* CARD */
+
 .popular-card {
   max-width: 220px;
   background: #fff;
@@ -135,7 +135,7 @@ padding-bottom: 127px;
   }
 }
 
-/* 💻 1024px */
+
 @media (max-width: 1024px) {
   .popular-list {
     flex-wrap: wrap;
@@ -147,7 +147,7 @@ padding-bottom: 127px;
   }
 }
 
-/* 📱 768px */
+
 @media (max-width: 768px) {
   .popular-section {
     padding-top: 70px;
@@ -176,7 +176,7 @@ padding-bottom: 127px;
   }
 }
 
-/* 📱 450px */
+
 @media (max-width: 450px) {
   .popular-section {
     padding-top: 50px;
@@ -223,7 +223,7 @@ padding-bottom: 127px;
     }
   }
 }
-///////////////////////////////////////////////////////////////////////////////
+
 /// ///////CHIKEN-----SECTION//////////////////////////////////////////////////
 /// ///////////////////////////////////////////////////////////////////////
 $dark: #2b2b3c;
@@ -245,7 +245,7 @@ $muted: #8E97A6;
   }
 }
 
-/* CARD */
+
 .menu-item {
   width: 220px;
   border-radius: 34px;
@@ -351,7 +351,7 @@ $muted: #8E97A6;
   }
 }
 
-/* ================== 768px (TABLET) ================== */
+
 @media (max-width: 768px) {
   .menu-block {
     padding: 55px 0;
@@ -391,7 +391,7 @@ $muted: #8E97A6;
   }
 }
 
-/* ================== 450px (MOBILE) ================== */
+
 @media (max-width: 450px) {
   .menu-block {
     padding: 40px 0;

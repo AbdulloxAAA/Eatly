@@ -70,7 +70,7 @@
 }
 /////quality/////////////////////////////////
 /// ////////////////////////////////////////
-/// ///////////////////////////////
+
 .quality {
  margin-top: 203px;
   padding-bottom: 120px ;
@@ -82,7 +82,7 @@
     gap: 80px;
   }
 
-  /* Image */
+  
   &__image {
 flex: 1;
     display: flex;
@@ -95,7 +95,7 @@ flex: 1;
     }
   }
 
-  /* Content */
+ 
   &__content {
 margin-right: 30px;
 
@@ -138,7 +138,7 @@ margin-right: 30px;
     }
   }
 
-  /* Button */
+
   .btn {
     display: flex;
     align-items: center;
@@ -186,7 +186,7 @@ color: white;
      z-index: 0;
   }
 }
-  /* Responsive */
+ 
   @media (max-width: 900px) {
     &__wrapper {
       flex-direction: column-reverse;

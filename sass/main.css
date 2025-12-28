@@ -234,7 +234,6 @@ a {
   cursor: pointer;
 }
 
-/* MOBILE */
 .mobile-menu {
   background: #fff;
   padding: 20px;
@@ -284,7 +283,6 @@ a {
   padding-bottom: 81px;
 }
 
-/* TOP */
 .footer__top {
   display: flex;
   justify-content: space-between;
@@ -311,7 +309,6 @@ a {
   color: #6c5ce7;
 }
 
-/* NAV */
 .footer__nav {
   display: flex;
   gap: 70px;
@@ -331,7 +328,6 @@ a {
   color: #000;
 }
 
-/* DIVIDER */
 .footer__divider {
   border: 1px solid #DCDCDC;
   background: #818181;
@@ -339,7 +335,6 @@ a {
   margin-top: 29px;
 }
 
-/* BOTTOM */
 .footer__bottom {
   display: flex;
   justify-content: space-between;
@@ -353,7 +348,6 @@ a {
   margin: 0;
 }
 
-/* SOCIALS */
 .footer__socials {
   display: flex;
   align-items: center;
@@ -369,7 +363,6 @@ a {
   opacity: 1;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .footer__top,
   .footer__bottom {
@@ -387,7 +380,6 @@ a {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  /* TOP */
   .footer__top {
     flex-direction: column;
     align-items: flex-start;
@@ -405,7 +397,6 @@ a {
   .footer__brand .footer__socials {
     display: flex;
   }
-  /* NAV */
   .footer__nav {
     flex-direction: column;
     gap: 20px;
@@ -413,16 +404,13 @@ a {
   .footer__nav a {
     font-size: 16px;
   }
-  /* DIVIDER */
   .footer__divider {
     margin: 24px 0;
   }
-  /* BOTTOM */
   .footer__bottom {
     text-align: center;
     gap: 16px;
   }
-  /* SOCIALS */
   .footer__socials {
     gap: 24px;
     display: none;
@@ -594,7 +582,6 @@ a {
   color: #6c5fbc;
 }
 
-/* ORDERS */
 .orders {
   display: flex;
   flex-direction: column;
@@ -650,7 +637,6 @@ a {
   display: inline-block;
 }
 
-/* PURCHASES */
 .purchases {
   background: #fff;
   padding: 28px;
@@ -733,9 +719,6 @@ a {
   background: #ffedd2;
 }
 
-/* =======================
-   LAPTOP / SMALL DESKTOP
-======================= */
 @media (max-width: 1200px) {
   .dashboard {
     padding: 70px 0;
@@ -753,9 +736,6 @@ a {
     max-width: 100%;
   }
 }
-/* =======================
-   TABLET
-======================= */
 @media (max-width: 992px) {
   .dashboard__container {
     grid-template-columns: 1fr;
@@ -794,9 +774,6 @@ a {
     font-size: 19px;
   }
 }
-/* =======================
-   MOBILE
-======================= */
 @media (max-width: 576px) {
   .dashboard {
     padding: 60px 0;
@@ -857,7 +834,6 @@ a {
     width: 100%;
   }
 }
-/* SECTION */
 .popular-section {
   padding-top: 100px;
   padding-bottom: 127px;
@@ -882,7 +858,6 @@ a {
   padding-bottom: 65px;
 }
 
-/* CARD */
 .popular-card {
   max-width: 220px;
   background: #fff;
@@ -971,7 +946,6 @@ a {
   cursor: pointer;
 }
 
-/* 💻 1024px */
 @media (max-width: 1024px) {
   .popular-list {
     flex-wrap: wrap;
@@ -981,7 +955,6 @@ a {
     max-width: 200px;
   }
 }
-/* 📱 768px */
 @media (max-width: 768px) {
   .popular-section {
     padding-top: 70px;
@@ -1004,7 +977,6 @@ a {
     font-size: 22px;
   }
 }
-/* 📱 450px */
 @media (max-width: 450px) {
   .popular-section {
     padding-top: 50px;
@@ -1057,7 +1029,6 @@ a {
   gap: 31px;
 }
 
-/* CARD */
 .menu-item {
   width: 220px;
   border-radius: 34px;
@@ -1148,7 +1119,6 @@ a {
     width: 200px;
   }
 }
-/* ================== 768px (TABLET) ================== */
 @media (max-width: 768px) {
   .menu-block {
     padding: 55px 0;
@@ -1178,7 +1148,6 @@ a {
     font-size: 22px;
   }
 }
-/* ================== 450px (MOBILE) ================== */
 @media (max-width: 450px) {
   .menu-block {
     padding: 40px 0;
@@ -1250,7 +1219,6 @@ a {
   text-decoration: none;
 }
 
-/* CARD */
 .dish-card {
   max-width: 220px;
   background: #fff;
@@ -1349,7 +1317,6 @@ a {
     max-width: 200px;
   }
 }
-/* 768px dan past (tablet) */
 @media (max-width: 768px) {
   .dishes {
     padding-top: 70px;
@@ -1378,7 +1345,6 @@ a {
     font-size: 22px;
   }
 }
-/* 📱 400px va undan past — 1 qatorda 2 ta card */
 @media (max-width: 450px) {
   .dishes {
     padding-top: 50px;
@@ -1451,7 +1417,6 @@ a {
   text-decoration: none;
 }
 
-/* CARD */
 .menu-list__item {
   max-width: 220px;
   background: #fff;
@@ -1550,7 +1515,6 @@ a {
     max-width: 200px;
   }
 }
-/* 768px dan past (tablet) */
 @media (max-width: 768px) {
   .menu-list {
     padding-top: 70px;
@@ -1579,7 +1543,6 @@ a {
     font-size: 22px;
   }
 }
-/* 📱 400px va undan past — 1 qatorda 2 ta card */
 @media (max-width: 450px) {
   .menu-list {
     padding-top: 50px;
@@ -1627,8 +1590,6 @@ a {
 .promo {
   padding: 40px 16px;
   padding-bottom: 250px;
-  /* ===== FORM ===== */
-  /* ===== IMAGE ===== */
 }
 .promo__container {
   background: #5C4EAE;
@@ -1702,7 +1663,6 @@ a {
   z-index: 20;
 }
 
-/* ===== TABLET ===== */
 @media (max-width: 900px) {
   .promo__container {
     flex-direction: column;
@@ -1734,7 +1694,6 @@ a {
     padding: 10px 16px 10px 16px;
   }
 }
-/* ===== MOBILE ===== */
 @media (max-width: 480px) {
   .promo__title {
     font-size: 46px;
@@ -1761,7 +1720,6 @@ a {
   color: #6C5FBC;
 }
 
-/* ===== CARDS ===== */
 .restaurants-row {
   display: flex;
   gap: 30px;
@@ -1835,7 +1793,6 @@ a {
   margin-top: 7px;
 }
 
-/* ===== BOOKMARK ===== */
 .bookmark {
   cursor: pointer;
   transition: 0.3s;
@@ -1848,7 +1805,6 @@ a {
      object-fit: contain;
 }
 
-/* ===== VIEW ALL ===== */
 .view-all {
   text-align: right;
   margin-top: 65px;
@@ -1861,7 +1817,6 @@ a {
   font-weight: 500;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 1200px) {
   .restaurants-row {
     flex-wrap: wrap;
@@ -1871,7 +1826,6 @@ a {
     max-width: 360px;
   }
 }
-/* Tablets */
 @media (max-width: 992px) {
   .section-title {
     font-size: 38px;
@@ -1887,7 +1841,6 @@ a {
     font-size: 17px;
   }
 }
-/* Small tablets */
 @media (max-width: 768px) {
   .restaurants {
     padding-top: 70px;
@@ -1912,7 +1865,6 @@ a {
     text-align: center;
   }
 }
-/* Mobile */
 @media (max-width: 480px) {
   .section-title {
     font-size: 26px;
@@ -1960,7 +1912,6 @@ a {
   color: #6c5fbc;
 }
 
-/* ===== CARDS ===== */
 .restaurant-cards {
   display: flex;
   gap: 30px;
@@ -2035,7 +1986,6 @@ a {
   margin-top: 7px;
 }
 
-/* ===== BOOKMARK ===== */
 .bookmark {
   cursor: pointer;
   transition: 0.3s;
@@ -2047,7 +1997,6 @@ a {
      object-fit: contain;
 }
 
-/* ===== VIEW ALL ===== */
 .view-all-link a {
   text-decoration: none;
   color: #acadb9;
@@ -2055,7 +2004,6 @@ a {
   font-weight: 500;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 1200px) {
   .restaurant-cards {
     flex-wrap: wrap;
@@ -2065,7 +2013,6 @@ a {
     max-width: 360px;
   }
 }
-/* Tablets */
 @media (max-width: 992px) {
   .section-title {
     font-size: 38px;
@@ -2081,7 +2028,6 @@ a {
     font-size: 17px;
   }
 }
-/* Small tablets */
 @media (max-width: 768px) {
   .top-restaurants {
     padding-top: 70px;
@@ -2106,7 +2052,6 @@ a {
     text-align: center;
   }
 }
-/* Mobile */
 @media (max-width: 480px) {
   .section-title {
     font-size: 20px;
@@ -2271,7 +2216,6 @@ a {
 .testimonial {
   padding: 90px 0;
   margin-bottom: 220px;
-  /* ===== PROGRESS / CAROUSEL ===== */
 }
 .testimonial__title {
   text-align: center;
@@ -2404,18 +2348,15 @@ a {
   z-index: 1;
 }
 
-/* ================= TABLET & MOBILE ================= */
 @media (max-width: 992px) {
   .testimonial {
     padding: 70px 0 90px;
   }
-  /* Slider viewport */
   .testimonial__slider {
     position: relative;
     overflow: hidden;
     width: 100%;
   }
-  /* Track */
   .testimonial__track {
     margin-left: 0;
     padding-left: 0;
@@ -2423,7 +2364,6 @@ a {
     width: 100%;
     transition: transform 0.6s ease;
   }
-  /* Card = full width */
   .testimonial__card {
     min-width: 100%;
     max-width: 100%;
@@ -2434,19 +2374,16 @@ a {
     padding: 26px 24px;
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
   }
-  /* Active card */
   .testimonial__card.active {
     padding: 30px 26px;
     max-height: none;
   }
-  /* User info & stars always visible */
   .testimonial__card .testimonial__user,
   .testimonial__card .testimonial__stars {
     opacity: 1;
     max-height: none;
     margin: 16px 0 0;
   }
-  /* Progress */
   .testimonial__progress {
     position: static;
     margin: 40px 0 0;
@@ -2460,7 +2397,6 @@ a {
     margin-right: 8px;
   }
 }
-/* ================= MOBILE SMALL ================= */
 @media (max-width: 576px) {
   .testimonial {
     padding: 60px 0 80px;
@@ -2488,7 +2424,6 @@ a {
   padding-bottom: 250px;
   padding-top: 150px;
   background-color: #ffffff;
-  /* RIGHT SIDE */
 }
 .contact__container {
   display: flex;
@@ -2735,7 +2670,6 @@ a {
   font-weight: 400;
 }
 
-/* LEFT */
 .heroleft {
   max-width: 520px;
   flex: 1 1 100%;
@@ -2777,7 +2711,6 @@ a {
   width: 499px;
 }
 
-/* ACTION BUTTONS */
 .hero-actions {
   display: flex;
   gap: 16px;
@@ -2811,7 +2744,6 @@ a {
   color: white;
 }
 
-/* RATING */
 .heroleft-rating {
   display: flex;
   align-items: center;
@@ -2837,7 +2769,6 @@ a {
   color: #6b7280;
 }
 
-/* RIGHT IMAGE */
 .hero-right {
   width: 100%;
   max-width: 600px;
@@ -2848,8 +2779,6 @@ a {
   height: auto;
 }
 
-/* RESPONSIVE MEDIA QUERIES */
-/* Laptop & tablet */
 @media (max-width: 900px) {
   .hero-wrapper {
     flex-direction: column;
@@ -2874,7 +2803,6 @@ a {
     font-size: 16px;
   }
 }
-/* Tablet portret & mobil */
 @media (max-width: 768px) {
   .heroleft h1 {
     font-size: 46px;
@@ -2888,7 +2816,6 @@ a {
     gap: 12px;
   }
 }
-/* Mobil kichik ekranlar */
 @media (max-width: 480px) {
   .hero {
     margin-top: 100px;
@@ -2919,7 +2846,6 @@ a {
   transform: scale(1.1);
 }
 
-/* promo */
 .violet-orbit {
   background: #5C4EAE;
   background-image: url(../images/page2-home/Mask\ Group.png);
@@ -2959,7 +2885,6 @@ a {
   top: 30px;
 }
 
-/* dots */
 .quantum-dots {
   display: flex;
   justify-content: center;
@@ -2999,7 +2924,6 @@ a {
   height: 22px;
 }
 
-/* search */
 .echo-field input {
   padding-left: 28px;
   width: 100%;
@@ -3013,7 +2937,6 @@ a {
   outline: none;
 }
 
-/* toggle */
 .flux-switch {
   display: flex;
   background: #e2e2e2;
@@ -3037,7 +2960,6 @@ a {
   color: white;
 }
 
-/* animation */
 @keyframes cosmicPop {
   from {
     opacity: 0;
@@ -3056,7 +2978,6 @@ a {
   transform: scale(1.1);
 }
 
-/* left & right */
 .gravity-left {
   flex: 1;
 }
@@ -3073,7 +2994,6 @@ a {
   transform: translateY(-15px);
 }
 
-/* filter blocks */
 .filter-crystal {
   margin-bottom: 26px;
 }
@@ -3085,7 +3005,6 @@ a {
   margin-bottom: 25px;
 }
 
-/* category icons */
 .icon-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -3183,7 +3102,6 @@ a {
   margin-top: 10px;
 }
 
-/* sort */
 .sort-list div {
   display: flex;
   align-items: center;
@@ -3204,7 +3122,6 @@ a {
   color: #6C5FBC;
 }
 
-/* price */
 .price-beam {
   width: 100%;
   margin-bottom: 38px;
@@ -3286,7 +3203,6 @@ a {
     width: 50px;
   }
 }
-/* 768px va kichikroq ekranlar uchun */
 @media (max-width: 768px) {
   .nebula-root {
     gap: 20px;
@@ -3342,7 +3258,6 @@ a {
     width: 40px;
   }
 }
-/* 400px va kichik ekranlar uchun */
 @media (max-width: 400px) {
   .nebula-root {
     width: 100%;
@@ -3438,7 +3353,6 @@ a {
     border-radius: 12px;
   }
 }
-/* PHONE SCREEN */
 .screen {
   border-radius: 28px;
   overflow: hidden;
@@ -3449,7 +3363,6 @@ a {
      object-fit: cover;
 }
 
-/* MAP IMAGE */
 .map-img {
   position: absolute;
   width: 90%;
@@ -3466,7 +3379,6 @@ a {
   opacity: 0.1;
 }
 
-/* CARD */
 .carde {
   margin: 0 auto 100px auto;
   max-width: 451px;
@@ -3484,7 +3396,6 @@ a {
   transform: translateY(-30px);
 }
 
-/* CARD TOP */
 .card-top {
   padding: 20px 20px 27px 20px;
   display: flex;
@@ -3511,7 +3422,6 @@ a {
   color: #acadb9;
 }
 
-/* CONTENT */
 .card-content {
   padding: 31px 20px 30px 20px;
 }
@@ -3635,7 +3545,6 @@ a {
      object-fit: cover;
 }
 
-/* DEKORATIV CHIZIQLAR */
 .decor {
   position: absolute;
   width: 60px;
@@ -3654,7 +3563,6 @@ a {
   transform: rotate(-20deg);
 }
 
-/* RESPONSIVE QISM */
 @media (max-width: 1200px) {
   .pricing-section {
     width: 90%;
@@ -3967,7 +3875,6 @@ a {
   margin-bottom: 8px;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .onlayn-pricing {
     display: flex;
@@ -4056,10 +3963,6 @@ a {
   color: black;
 }
 
-/* ===========================
-   RESPONSIVE (ENG PASTDA)
-=========================== */
-/* Tablet */
 @media (max-width: 992px) {
   .articles__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -4089,7 +3992,6 @@ a {
     font-size: 11.69px;
   }
 }
-/* Mobile */
 @media (max-width: 576px) {
   .articles__title {
     font-size: 30px;
@@ -4160,7 +4062,6 @@ a {
      object-fit: cover;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .article-hero {
     padding: 60px 0;
@@ -4319,11 +4220,7 @@ a {
     font-size: 16px;
   }
 }
-/* ====== Small Tablet & Mobile (<= 1000px) ====== */
 @media (max-width: 1000px) {
-  .guide-section {
-    /* ❌ O‘ng tarafdagi cardlar yo‘qoladi */
-  }
   .guide-section .content {
     flex-direction: column;
     row-gap: 40px;
@@ -4341,7 +4238,6 @@ a {
     font-size: 17px;
   }
 }
-/* ====== Mobile (<= 600px) ====== */
 @media (max-width: 600px) {
   .guide-section {
     padding: 30px 0;
@@ -4676,9 +4572,6 @@ a {
     font-size: 22px;
   }
 }
-/* =======================
-   MOBILE (max-width: 768px)
-======================= */
 @media (max-width: 768px) {
   .checkout {
     width: 95%;
@@ -4741,9 +4634,6 @@ a {
     padding: 20px;
   }
 }
-/* =======================
-   SMALL MOBILE (max-width: 480px)
-======================= */
 @media (max-width: 480px) {
   .cart-item img {
     width: 60px;
@@ -4764,10 +4654,6 @@ a {
   .summary .total {
     font-size: 19px;
   }
-}
-.signup {
-  /* LEFT */
-  /* RIGHT */
 }
 .signup__container {
   display: flex;
@@ -4931,7 +4817,6 @@ a {
     text-align: center;
   }
 }
-/* O‘rta ekranlar (1000px dan kichik) */
 @media (max-width: 1000px) {
   .signup__left {
     width: 100%;
@@ -4947,7 +4832,6 @@ a {
     display: none;
   }
 }
-/* Kichik ekranlar (600px dan kichik) */
 @media (max-width: 600px) {
   .signup__left {
     padding: 30px 15px;
@@ -5086,9 +4970,6 @@ a {
   max-width: 383px;
 }
 
-/* =========================
-   TABLET (≤1000px)
-========================= */
 @media (max-width: 1000px) {
   .signup__container {
     flex-direction: column;
@@ -5105,9 +4986,6 @@ a {
     max-width: 100%;
   }
 }
-/* =========================
-   MOBILE (≤600px)
-========================= */
 @media (max-width: 600px) {
   .signup__left {
     padding: 30px 15px;
@@ -5139,9 +5017,6 @@ a {
     font-size: 16px;
   }
 }
-/* =========================
-   SMALL MOBILE (≤460px)
-========================= */
 @media (max-width: 460px) {
   .signup__title {
     font-size: 20px;
@@ -5162,10 +5037,6 @@ a {
     padding: 15px 0;
     text-align: center;
   }
-}
-.login {
-  /* LEFT */
-  /* RIGHT */
 }
 .login__container {
   display: flex;
@@ -5287,7 +5158,6 @@ a {
   opacity: 0.9;
 }
 
-/* RESPONSIVE */
 @media (max-width: 1000px) {
   .login__container {
     flex-direction: column;
@@ -5369,10 +5239,6 @@ a {
   margin-top: 203px;
   padding-bottom: 120px;
   background: #fff;
-  /* Image */
-  /* Content */
-  /* Button */
-  /* Responsive */
 }
 .quality__wrapper {
   display: flex;

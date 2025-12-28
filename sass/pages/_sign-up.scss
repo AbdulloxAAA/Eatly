@@ -10,7 +10,7 @@
 
     padding-bottom: 76px;
 }
-  /* LEFT */
+  
   &__left {
     width: 50%;
     padding: 80px 0px;
@@ -135,7 +135,7 @@
     }
   }
 
-  /* RIGHT */
+ 
   &__right {
     width: 55%;
     background: #6C5FBC;
@@ -172,7 +172,7 @@
   }
 }
 
-/* O‘rta ekranlar (1000px dan kichik) */
+
 @media (max-width: 1000px) {
   .signup__left {
     width: 100%;
@@ -192,7 +192,7 @@
   }
 }
 
-/* Kichik ekranlar (600px dan kichik) */
+
 @media (max-width: 600px) {
   .signup__left {
     padding: 30px 15px;
@@ -268,13 +268,13 @@
     &__textarea,
     &__password,
     &__inputp {
-      width: 100%;       // Ekranga sig‘adigan qilib kenglik
-      padding: 10px 12px; // Paddingni kichikroq qilamiz
-      margin-left: 0;    // Marginni olib tashlaymiz
+      width: 100%;      
+      padding: 10px 12px; 
+      margin-left: 0;   
     }
 
     &__textarea {
-      height: 80px;      // Kichik ekran uchun balandlikni kamaytirish
+      height: 80px;      
     }
   }
 
@@ -287,7 +287,7 @@
 }
 @media (max-width: 462px) {
   .signup__container {
-    flex-direction: column;  // left va right bloklar pastga tushadi
+    flex-direction: column; 
     padding: 0;
   }
 
@@ -305,7 +305,7 @@
     }
 
     &__btn {
-      width: 100%;  // tugma to‘liq kenglik
+      width: 100%;  
       padding: 12px;
       font-size: 14px;
     }
@@ -332,14 +332,14 @@
     &__textarea,
     &__password,
     &__inputp {
-      width: 100%;            // ekran bo‘ylab sig‘adi
-      padding: 8px 10px;      // paddingni kamaytirdik
+      width: 100%;            
+      padding: 8px 10px;     
       margin-left: 0;
-      box-sizing: border-box; // border va paddingni hisobga oladi
+      box-sizing: border-box; 
     }
 
     &__textarea {
-      height: 70px;           // balandlikni kichikroq qilamiz
+      height: 70px;           
     }
   }
 
@@ -369,9 +369,7 @@
   }
 }
 
-/* =========================
-   TABLET (≤1000px)
-========================= */
+
 @media (max-width: 1000px) {
   .signup__container {
     flex-direction: column;
@@ -392,9 +390,7 @@
   }
 }
 
-/* =========================
-   MOBILE (≤600px)
-========================= */
+
 @media (max-width: 600px) {
   .signup__left {
     padding: 30px 15px;
@@ -424,7 +420,7 @@
   .signup__password,
   .signup__inputp {
     width: 100%;
-    margin-left: 0;   // MUHIM
+    margin-left: 0;  
   }
 
   .signup__btn {
@@ -433,9 +429,7 @@
   }
 }
 
-/* =========================
-   SMALL MOBILE (≤460px)
-========================= */
+
 @media (max-width: 460px) {
   .signup__title {
     font-size: 20px;

@@ -14,11 +14,11 @@ const dropdown = document.querySelector('.dropdown');
 const dropdownBtn = dropdown.querySelector('.dropdown-btn');
 
 dropdownBtn.addEventListener('click', (e) => {
-  e.preventDefault(); // linkning default harakatini to‘xtatadi
-  dropdown.classList.toggle('active'); // click bilan ochish/yopish
+  e.preventDefault();
+  dropdown.classList.toggle('active');
 });
 
-// Optional: klik qayerga bo‘lsa, dropdownni yopish
+
 document.addEventListener('click', (e) => {
   if (!dropdown.contains(e.target)) {
     dropdown.classList.remove('active');
