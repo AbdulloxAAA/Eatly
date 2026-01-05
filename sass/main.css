@@ -4072,7 +4072,30 @@ a {
     padding: 60px 0;
   }
   .article-hero__title {
-    font-size: 32px;
+    font-size: 23px;
+  }
+  .article-hero__avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .article-hero__avatar img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .article-hero__text {
+    font-size: 10px;
+    color: #8D8D8D;
+    font-weight: 500;
+  }
+  .article-hero__text strong {
+    display: block;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
   }
   .article-hero__image {
     height: 200px;
@@ -4085,9 +4108,9 @@ a {
 .guide-section .content {
   display: flex;
   align-items: start;
-  row-gap: 50px;
-  -moz-column-gap: 100px;
-       column-gap: 100px;
+  -moz-column-gap: 150px;
+       column-gap: 150px;
+  margin-bottom: 150px;
 }
 .guide-section .steps .step {
   margin-bottom: 30px;
@@ -4102,7 +4125,7 @@ a {
   line-height: 1.6;
   font-size: 22px;
   margin-bottom: 80px;
-  width: 800px;
+  width: 750px;
 }
 .guide-section .steps .step ul {
   padding-left: 18px;
@@ -4114,7 +4137,7 @@ a {
   margin-bottom: 6px;
 }
 .guide-section .steps .btni {
-  margin-top: 100px;
+  margin-top: 60px;
   padding: 24px 27px;
   border: none;
   border-radius: 8px;
@@ -4128,12 +4151,15 @@ a {
   background: rgb(87.9545454545, 69.7727272727, 227.7272727273);
 }
 .guide-section .articles {
-  margin-top: -90px;
+  padding-bottom: 1px;
+  border-left: 1px solid #9B9B9B;
+  padding-left: 40px;
+  padding-top: 2px;
 }
 .guide-section .articles h4 {
-  font-size: 33px;
+  font-size: 30px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .guide-section .articles .article-card {
   background: #f8f8f8;

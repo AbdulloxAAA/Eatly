@@ -58,9 +58,30 @@ font-weight: 500;
     padding: 60px 0;
 
     &__title {
-      font-size: 32px;
+      font-size: 23px;
     }
-
+&__avatar{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+&__text{
+  font-size: 10px;
+  color: #8D8D8D;
+  font-weight: 500;
+  strong {
+    display: block;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
     &__image {
       height: 200px;
     }
@@ -76,8 +97,9 @@ font-weight: 500;
   .content {
    display: flex;
    align-items: start;
-   row-gap: 50px;
-   column-gap: 100px;
+   
+   column-gap: 150px;
+   margin-bottom: 150px;
   }
 
   .steps {
@@ -95,7 +117,7 @@ font-weight: 500;
         line-height: 1.6;
         font-size: 22px;
         margin-bottom: 80px;
-        width: 800px;
+        width: 750px;
       }
 
       ul {
@@ -110,7 +132,7 @@ margin-bottom: 100px;
     }
 
     .btni {
-      margin-top: 100px;
+      margin-top: 60px;
       padding: 24px 27px;
       border: none;
       border-radius: 8px;
@@ -127,11 +149,14 @@ margin-bottom: 100px;
   }
 
   .articles {
-    margin-top: -90px;
+padding-bottom: 1px;
+    border-left: 1px solid #9B9B9B;
+    padding-left: 40px;
+    padding-top: 2px;
     h4 {
-      font-size: 33px;
+      font-size: 30px;
       font-weight: 600;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     .article-card {
