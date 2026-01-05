@@ -29,8 +29,8 @@
 
   &__text {
     font-size: 15px;
-    color: #8D8D8D;
-font-weight: 500;
+    color: #8d8d8d;
+    font-weight: 500;
     strong {
       display: block;
       color: #000;
@@ -43,15 +43,12 @@ font-weight: 500;
     width: 100%;
     height: 403px;
     overflow: hidden;
-    img{
-        width: 100%;
-        object-fit: cover;
+    img {
+      width: 100%;
+      object-fit: cover;
     }
   }
-
- 
 }
-
 
 @media (max-width: 768px) {
   .article-hero {
@@ -60,28 +57,28 @@ font-weight: 500;
     &__title {
       font-size: 23px;
     }
-&__avatar{
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  overflow: hidden;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-&__text{
-  font-size: 10px;
-  color: #8D8D8D;
-  font-weight: 500;
-  strong {
-    display: block;
-    color: #000;
-    font-size: 15px;
-    font-weight: 500;
-  }
-}
+    &__avatar {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__text {
+      font-size: 10px;
+      color: #8d8d8d;
+      font-weight: 500;
+      strong {
+        display: block;
+        color: #000;
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
     &__image {
       height: 200px;
     }
@@ -89,17 +86,17 @@ font-weight: 500;
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /// /////////////////////////////////////////
-/// 
+///
 .guide-section {
   padding: 60px 0;
   background: #fff;
 
   .content {
-   display: flex;
-   align-items: start;
-   
-   column-gap: 150px;
-   margin-bottom: 150px;
+    display: flex;
+    align-items: start;
+
+    column-gap: 150px;
+    margin-bottom: 150px;
   }
 
   .steps {
@@ -122,9 +119,9 @@ font-weight: 500;
 
       ul {
         padding-left: 18px;
-margin-bottom: 100px;
+        margin-bottom: 100px;
         li {
-          color:#252525;
+          color: #252525;
           font-size: 22px;
           margin-bottom: 6px;
         }
@@ -136,7 +133,7 @@ margin-bottom: 100px;
       padding: 24px 27px;
       border: none;
       border-radius: 8px;
-      background: #6C5FBC;
+      background: #6c5fbc;
       color: #fff;
       font-weight: 600;
       font-size: 20px;
@@ -149,8 +146,8 @@ margin-bottom: 100px;
   }
 
   .articles {
-padding-bottom: 1px;
-    border-left: 1px solid #9B9B9B;
+    padding-bottom: 1px;
+    border-left: 1px solid #9b9b9b;
     padding-left: 40px;
     padding-top: 2px;
     h4 {
@@ -164,33 +161,33 @@ padding-bottom: 1px;
       padding: 21px 16px 30px 17px;
       border-radius: 10px;
       margin-bottom: 43px;
-height: 376px;
-.conpink{
-    display: flex;
-    align-items: start;
-gap: 15px;
-div{
-    margin-right:25px ;
-}
-    img{
-        width: 37px;
-        height: 37px; border-radius: 50%;
-    }
-    span{
-        color: #8D8D8D;
-        font-size: 10px;
-
-    }
-    .pi{
-        font-size: 14px;
-        font-weight: 500;
-    }
-    .data{
-        font-size: 12px;
-        font-weight: 500;
-        color: #B7B4B4;
-    }
-}
+      height: 376px;
+      .conpink {
+        display: flex;
+        align-items: start;
+        gap: 15px;
+        div {
+          margin-right: 25px;
+        }
+        img {
+          width: 37px;
+          height: 37px;
+          border-radius: 50%;
+        }
+        span {
+          color: #8d8d8d;
+          font-size: 10px;
+        }
+        .pi {
+          font-size: 14px;
+          font-weight: 500;
+        }
+        .data {
+          font-size: 12px;
+          font-weight: 500;
+          color: #b7b4b4;
+        }
+      }
       img {
         width: 264px;
         height: 232px;
@@ -266,7 +263,6 @@ div{
   }
 }
 
-
 @media (max-width: 1000px) {
   .guide-section {
     .content {
@@ -274,7 +270,6 @@ div{
       row-gap: 40px;
     }
 
-    
     .articles {
       display: none;
     }
@@ -296,7 +291,6 @@ div{
     }
   }
 }
-
 
 @media (max-width: 600px) {
   .guide-section {
